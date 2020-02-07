@@ -1,0 +1,44 @@
+//=======================================
+// lay al 100%
+//=======================================
+[class^="lay"],
+[class*=" lay"] {
+    width: 100%;
+    padding-right: $px-10;
+    padding-left: $px-10;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media ($media-s) {
+    [class^="lay"],
+    [class*=" lay"] {
+        padding-right: $px-20;
+        padding-left: $px-20;
+    }
+}
+
+@media ($media-m) {
+    [class^="lay"],
+    [class*=" lay"] {
+        padding-right: $px-30;
+        padding-left: $px-30;
+    }
+}
+
+@media ($media-l) {
+    [class^="lay"],
+    [class*=" lay"] {
+        max-width: 1340px;
+        padding-right: $px-40;
+        padding-left: $px-40;
+    }
+}
+
+//=======================================
+// lay al 100% sin paddings ni margins
+//=======================================
+.container-full-width {
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,67 @@
+.hlp-hidden {
+    display:none;
+}
+
+.hlp-visible {
+    display:block;
+}
+
+.hlp-text-center {
+    text-align: center;
+}
+
+.hlp-text-left {
+    text-align: left;
+}
+
+.hlp-text-right {
+    text-align: right;
+}
+
+.hlp-light {
+    font-weight: 100;
+}
+
+.hlp-semi {
+    font-weight: 400;
+}
+
+.hlp-bold {
+    font-weight: bold;
+}
+
+.hlp-white {
+    color:$white;
+}
+
+.hlp-black {
+    color:$black;
+}
+
+.hlp-primary {
+    color:$primary;
+}
+
+.hlp-secondary {
+    color:$secondary;
+}
+
+.hlp-third {
+    color:$third;
+}
+
+.hlp-bg-primary {
+    background-color:$primary;
+}
+
+.hlp-bg-secondary {
+    background-color:$secondary;
+}
+
+.hlp-bg-third {
+    background-color:$third;
+}
+
+.hlp_uppercase {
+    text-transform: uppercase;
+}
