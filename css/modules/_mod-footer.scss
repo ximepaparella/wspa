@@ -2,7 +2,7 @@
     div {
         display: flex;
         flex-direction: row;
-        padding: $px-15 0;
+        padding: $px-15;
         
         &.--right {
             justify-content: flex-end;
