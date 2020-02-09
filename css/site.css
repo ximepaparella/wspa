@@ -1688,6 +1688,7 @@ ul.bxslider {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0.9375em;
+  font-size: 0.8125rem;
 }
 
 .mod-footer div.--right {
