@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,105 @@
     <title>Wspa | Whyndham Spa Home Page</title>
 
     <!-- CSS -->
-    <link rel = "stylesheet" type = "text/css" href = "css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- BX SLIDER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="mod-header">
-        <!-- LOGO -->
+        <div class="lay">
+            <!-- LOGO -->
+            <a class="com-logo" href="index.html">
+                <i class="icon-logo"> </i>
+            </a>
+            <!-- /LOGO -->
 
-        <!-- /LOGO -->
+            <!-- MENU -->
+            <nav class="mod-menu">
+                <a href="">Inicio</a>
+                <a href="">Tratamientos</a>
+                <a href="">Circuitos de Spa</a>
+                <a href="">Membresías</a>
+                <a href="">Yoga</a>
+                <a href="">Santal Café</a>
+                <a href="">Contacto</a>
+            </nav>
+            <!-- /MENU -->
 
-        <!-- MENU -->
-
-        <!-- /MENU -->
-
-        <!-- SOCIAL O WTS -->
-
-        <!-- /SOCIAL O WTS -->
+            <!--WTS -->
+            <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
+                target="_blank" class="com-whatsapp">
+                <i class="icon-w-outline"></i> TURNOS Y CONSULTAS
+            </a>
+            <!-- /WTS -->
+        </div>
     </header>
     <!-- /HEADER -->
 
     <!-- SLIDER -->
-    <section class="mod-slider">
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                responsive: true
+            });
+        });
+    </script>
+    <div class="bxslider">
+        <!-- SLIDE 1 -->
+        <div>
+            <img src="img/slides/slide-1.jpg">
+            <div class="--text">
+                <h2>DÍA DE SPA EXIMIA</h2>
+                <p>Te invitamos a disfrutar de una propuesta única pensada
+                    para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso
+                    a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.
+                </p>
+                <a class="com-button" href="">CONOCÉ MÁS</a>
+            </div>
+        </div>
+        <!-- /SLIDE 1 -->
 
-    </section>
-
+        <!-- SLIDE 2 -->
+        <div>
+            <img src="img/slides/slide-1.jpg">
+            <div class="--text">
+                <h2>DÍA DE SPA EXIMIA</h2>
+                <p>Te invitamos a disfrutar de una propuesta única pensada
+                    para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso
+                    a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.
+                </p>
+                <a class="com-button" href="">CONOCÉ MÁS</a>
+            </div>
+        </div>
+        <!-- /SLIDE 2 -->
+    </div>
     <!-- /SLIDER -->
 
     <!--SECTION INTRO -->
     <section class="mod-intro">
-        <!-- TITLE -->
-        <div class="com-title">
-            <h3>BIENVENIDOS A</h3>
-            <H1>WHYNDHAM SPA</H1>
+        <div class="lay">
+            <!-- TITLE -->
+            <div class="com-title">
+                <h3>BIENVENIDOS A</h3>
+                <H1>WHYNDHAM SPA</H1>
+            </div>
+            <!-- /TITLE -->
+
+            <!-- MASONRY -->
+
+            <!-- /MASONRY -->
         </div>
-        <!-- /TITLE -->
-
-        <!-- MASONRY -->
-
-        <!-- /MASONRY -->
     </section>
     <!--/SECTION INTRO -->
 
@@ -56,27 +114,71 @@
 
     <!--SECTION SERVICES -->
     <section class="mod-services">
-        <!-- TITLE -->
-        <div class="com-title">
-            <h3>CONOCÉ ALGUNOS DE</h3>
-            <H1>Nuestros servicios Premium</H1>
-        </div>
-        <!-- /TITLE -->
+        <div class="lay">
+            <!-- TITLE -->
+            <div class="com-title">
+                <h3>CONOCÉ ALGUNOS DE</h3>
+                <H1>Nuestros Servicios Premium</H1>
+            </div>
+            <!-- /TITLE -->
 
-        <!-- ICON 3 COL -->
-        <div class="row row-gap-tablet-3">
-            <div>  </div>
-            <div>  </div>
-            <div>  </div>
-        </div>
+            <!-- ICON 3 COL -->
+            <div class="row row-gap-tablet-3">
+                <div class="com-icon-text">
+                    <i class="icon-pool"></i>
+                    <div>
+                        <h4>Piscina In/Out</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="com-icon-text">
+                    <i class="icon-shower"></i>
+                    <div>
+                        <h4>Ducha Escocesa</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="com-icon-text">
+                    <i class="icon-plant"></i>
+                    <div>
+                        <h4>Sala de Relax</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row row-gap-tablet-3">
-            <div>  </div>
-            <div>  </div>
-            <div>  </div>
+            <div class="row row-gap-tablet-3">
+                <div class="com-icon-text">
+                    <i class="icon-sauna"></i>
+                    <div>
+                        <h4>Sauna Seco y Húmedo</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                </div>
+                <div class="com-icon-text">
+                    <i class="icon-coffee"></i>
+                    <div>
+                        <h4>Gastronomía</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="com-icon-text">
+                    <i class="icon-sun"></i>
+                    <div>
+                        <h4>Terraza con Solarium</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /ICON 3 COL -->
         </div>
-
-        <!-- /ICON 3 COL -->
     </section>
     <!--/SECTION SERVICES -->
 
@@ -84,11 +186,11 @@
     <section class="mod-slider-promo">
         <!-- SLIDER -->
 
-            <!-- PROMO 1 -->
-            <div class="mod-promo-treatment row hlp-bg-third w-photo one-price">
-                
-            </div>
-            <!-- /PROMO 1 -->
+        <!-- PROMO 1 -->
+        <div class="mod-promo-treatment row hlp-bg-third w-photo one-price">
+
+        </div>
+        <!-- /PROMO 1 -->
 
         <!-- /SLIDER -->
     </section>
@@ -129,4 +231,5 @@
 
 
 </body>
+
 </html>

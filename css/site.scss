@@ -5,6 +5,8 @@
 /********** BASE **********/
 @import 'base/reset';
 @import 'base/helpers';
+@import 'base/icons';
+@import 'base/animations';
 
 /********** LAYOUTS **********/
 @import 'layouts/grid';
@@ -27,3 +29,9 @@
 @import 'modules/mod-treatment';
 
 /********** COMPONENTS **********/
+@import 'components/com-logo';
+@import 'components/com-whatsapp';
+@import 'components/com-button';
+
+@import 'components/com-title';
+@import 'components/com-icon-text';

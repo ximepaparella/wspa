@@ -86,7 +86,7 @@
             font: inherit;
             vertical-align: baseline;
             font-family: $font-default; 
-            color:$primary;
+            color:$text;
         }
         /* HTML5 display-role reset for older browsers */
         
@@ -106,11 +106,17 @@
         
         body {
             line-height: 1;
+            width:100%;
+            box-sizing: border-box;
         }
         
         ol,
         ul {
             list-style: none;
+        }
+
+        img {
+            width:100%;
         }
         
         blockquote,

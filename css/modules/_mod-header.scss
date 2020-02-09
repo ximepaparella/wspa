@@ -1,0 +1,15 @@
+.mod-header {
+    border-bottom: 1px solid $white;
+    width:100%;
+    z-index: 10;
+    position: relative;
+
+    .lay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background: transparent;
+    padding: $px-20;  
+    }
+}

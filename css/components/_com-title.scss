@@ -1,0 +1,22 @@
+.com-title {
+    text-align: center;
+    margin:$px-20 0;
+
+    h1 {
+        font-size:$font-40;
+        font-family: $font-titles;
+        font-weight: bold;
+    }
+
+    h3 {
+       letter-spacing: 3px;
+       margin-bottom:$px-10;
+       font-size: $px-15;
+    }
+
+    /*Especificacion para modulos de Servicios*/
+    .mod-services & {
+        margin-bottom: 80px;
+    }
+
+}

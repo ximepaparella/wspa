@@ -1,0 +1,12 @@
+.mod-menu {
+    display:flex;
+    flex-direction: row;
+
+    a {
+        text-transform: uppercase;
+        padding: 0 $px-10;
+        font-weight: normal;
+        color:$white;
+    }
+    
+}

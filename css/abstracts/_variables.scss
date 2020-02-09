@@ -8,12 +8,16 @@ $col-width: 100/$cant-col; //Ancho de columnas
 $primary: #4D4D4D;
 $secondary: #CBC9BE;
 $third:#EFEDE1;
+$text: #707070;
+$grey: #A3A9B2;
 $white: #FFF;
 $black: #000;
 
+
 /* end Colores */
-$font-default: 'Playfair Display', serif;
-$font-titles:  'Quicksand', sans-serif;
+
+$font-titles: 'Playfair Display', serif;
+$font-default:  'Open Sans', sans-serif;
 
 //pixel
 $em: 0.0625em; //1px
@@ -339,3 +343,4 @@ $media-xl: "min-width: 83.75em"; // 1340px
 $gap-l: 0 $px-40;
 $gap-m: 0 $px-30;
 $gap-s: 0 $px-20;
+

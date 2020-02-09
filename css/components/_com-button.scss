@@ -1,0 +1,13 @@
+.com-button {
+    .--text & {
+        background-color:$white;
+        color:$primary;
+        padding:$px-10 $px-25;
+        width:30%;
+
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
