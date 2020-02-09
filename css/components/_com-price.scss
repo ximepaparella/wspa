@@ -1,0 +1,20 @@
+.com-price {
+    display:flex;
+    flex-direction: column;
+
+    h5 {
+        font-family: $font-titles;
+        font-size: $font-30;
+        line-height: $line-30;
+        font-weight: bold;
+    }
+
+     /*Especificacion para modulos de un solo Precio */
+    .one-price & {
+        display:flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

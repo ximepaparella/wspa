@@ -1,0 +1,13 @@
+.mod-footer {
+    div {
+        display: flex;
+        flex-direction: row;
+        padding: $px-15 0;
+        
+        &.--right {
+            justify-content: flex-end;
+            text-align: center;
+        }
+    
+    }
+}

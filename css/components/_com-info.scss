@@ -1,0 +1,27 @@
+.com-info {
+    display: flex;
+    flex-direction: column;
+    padding:$px-30 $px-50;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly; 
+
+    strong,
+    a,
+    span {
+        font-family: $font-titles!important;
+        display: block;
+        font-size: $font-18;
+        line-height: $line-20;
+    }
+
+    a {
+        &:hover {
+            font-weight: 500;
+        }
+    }
+
+    strong {
+        font-weight: bold;
+    }
+}

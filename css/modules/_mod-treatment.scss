@@ -1,0 +1,10 @@
+.mod-treatment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .--description {
+        justify-content: center;
+        text-align: center;
+   }   
+}

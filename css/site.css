@@ -339,6 +339,10 @@ a {
   margin: 3.125em 0;
 }
 
+.row.no-gap {
+  margin: 0;
+}
+
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-mobile-1, .col-mobile-2, .col-mobile-3, .col-mobile-4, .col-mobile-5, .col-mobile-6, .col-mobile-7, .col-mobile-8, .col-mobile-9, .col-mobile-10, .col-mobile-11, .col-mobile-12, .col-mobile,
 .col-mobile-auto, .col-tablet-1, .col-tablet-2, .col-tablet-3, .col-tablet-4, .col-tablet-5, .col-tablet-6, .col-tablet-7, .col-tablet-8, .col-tablet-9, .col-tablet-10, .col-tablet-11, .col-tablet-12, .col-tablet,
@@ -1611,6 +1615,107 @@ ul.bxslider {
   padding: 3.125em 0;
 }
 
+.mod-slider-promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.125em 0;
+}
+
+.mod-call-to-action {
+  height: 400px;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod-call-to-action.--gift {
+  background-image: url("../../img/call-to-action/gift.jpg");
+}
+
+.mod-call-to-action.--appointment {
+  background-image: url("../../img/call-to-action/appointment.jpg");
+}
+
+.mod-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod-social [class^="icon-"], .mod-social [class*=" icon-"] {
+  margin: 0 0.3125em;
+  font-size: 2.1875rem;
+  color: #CBC9BE;
+}
+
+.mod-social [class^="icon-"]:hover, .mod-social [class*=" icon-"]:hover {
+  opacity: 0.8;
+}
+
+.mod-footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.9375em 0;
+}
+
+.mod-footer div.--right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+}
+
+.mod-treatment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mod-treatment .--description {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 /********** COMPONENTS **********/
 .com-logo {
   font-size: 1.5625rem;
@@ -1640,37 +1745,99 @@ ul.bxslider {
   color: #4D4D4D;
 }
 
+.com-button {
+  padding: 0.625em 1.5625em;
+  background-color: #CBC9BE;
+  /*Especificacion para texto de Slider */
+  /*Especificacion para Modulo call to action */
+}
+
+.com-button:hover {
+  opacity: 0.8;
+}
+
 .--text .com-button {
   background-color: #FFF;
   color: #4D4D4D;
-  padding: 0.625em 1.5625em;
   width: 30%;
 }
 
-.--text .com-button:hover {
-  opacity: 0.9;
+.mod-call-to-action .com-button {
+  display: inline-block;
+  margin-top: 0.625em;
 }
 
 .com-title {
   text-align: center;
   margin: 1.25em 0;
+  /*Especificacion para modulos de Tratamientos*/
+  /*Especificacion para modulos de Call To Action*/
   /*Especificacion para modulos de Servicios*/
+  /*Especificacion para modulos de Servicios*/
+  /*Especificacion para modulos de Tratamiento*/
+  /*PAGE TITLE*/
+  /*Especificacion para modulos de Call To Action*/
+  /*TREATMENT TITLE*/
+  /*PRE TITLE*/
 }
 
-.com-title h1 {
+.mod-treatment .com-title {
+  margin: 0;
+}
+
+.mod-call-to-action.--left .com-title {
+  text-align: left;
+}
+
+.mod-call-to-action.--right .com-title {
+  text-align: right;
+}
+
+.mod-services .com-title {
+  margin-bottom: 80px;
+}
+
+.mod-services .com-title {
+  margin-bottom: 80px;
+}
+
+.mod-treatment .com-title {
+  font-size: 1.75em;
+  line-height: 2.1875rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.com-title .page-title {
   font-size: 2.5rem;
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 
-.com-title h3 {
-  letter-spacing: 3px;
-  margin-bottom: 0.625em;
-  font-size: 0.9375em;
+.mod-call-to-action .com-title .page-title {
+  padding: 0.3125em 0;
+  line-height: 2.9375rem;
 }
 
-.mod-services .com-title {
-  margin-bottom: 80px;
+.com-title .treatment-title {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.com-title .pre-title {
+  letter-spacing: 3px;
+  margin-bottom: 0.625em;
+  font-size: 0.9375rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  /*Especificacion para modulos de Tratamientos*/
+}
+
+.mod-treatment .com-title .pre-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.3125em;
 }
 
 .com-icon-text {
@@ -1701,5 +1868,94 @@ ul.bxslider {
   font-size: 2.1875rem;
   padding-right: 0.4375em;
   color: #A3A9B2;
+}
+
+.com-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.com-list .first-level {
+  font-family: "Playfair Display", serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.com-list .sub-level {
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+}
+
+.com-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*Especificacion para modulos de un solo Precio */
+}
+
+.com-price h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.875rem;
+  line-height: 2.3125rem;
+  font-weight: bold;
+}
+
+.one-price .com-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.com-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.875em 3.125em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.com-info strong,
+.com-info a,
+.com-info span {
+  font-family: "Playfair Display", serif !important;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.com-info a:hover {
+  font-weight: 500;
+}
+
+.com-info strong {
+  font-weight: bold;
 }
 /*# sourceMappingURL=site.css.map */

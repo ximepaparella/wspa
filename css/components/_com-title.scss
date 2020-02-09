@@ -1,22 +1,77 @@
 .com-title {
     text-align: center;
-    margin:$px-20 0;
+    margin: $px-20 0;
 
-    h1 {
-        font-size:$font-40;
-        font-family: $font-titles;
-        font-weight: bold;
+    /*Especificacion para modulos de Tratamientos*/
+    .mod-treatment & {
+        margin: 0;
     }
 
-    h3 {
-       letter-spacing: 3px;
-       margin-bottom:$px-10;
-       font-size: $px-15;
+    /*Especificacion para modulos de Call To Action*/
+    .mod-call-to-action.--left & {
+        text-align: left;
+    }
+
+    .mod-call-to-action.--right & {
+        text-align: right;
+    }
+
+    
+    /*Especificacion para modulos de Servicios*/
+    .mod-services & {
+        margin-bottom: 80px;
     }
 
     /*Especificacion para modulos de Servicios*/
     .mod-services & {
         margin-bottom: 80px;
+    }
+
+    /*Especificacion para modulos de Tratamiento*/
+    .mod-treatment & {
+        font-size: $px-28;
+        line-height: $line-28;
+        font-family: $font-titles;
+        font-weight: bold;
+    }
+
+    /*PAGE TITLE*/
+    .page-title {
+        font-size: $font-40;
+        font-family: $font-titles;
+        font-weight: bold;
+    }
+
+    /*Especificacion para modulos de Call To Action*/
+    .mod-call-to-action & {
+        .page-title {
+            padding: $px-5 0;
+            line-height: $line-40;
+        }
+    }
+
+    /*TREATMENT TITLE*/
+    .treatment-title {
+        font-size: $font-40;
+        font-family: $font-titles;
+        font-weight: bold;
+    }
+
+    /*PRE TITLE*/
+    .pre-title {
+        letter-spacing: 3px;
+        margin-bottom: $px-10;
+        font-size: $font-15;
+        font-family: $font-default;
+        font-weight: normal;
+
+        /*Especificacion para modulos de Tratamientos*/
+        .mod-treatment & {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: $px-5;
+        }
+
     }
 
 }

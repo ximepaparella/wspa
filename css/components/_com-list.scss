@@ -1,0 +1,14 @@
+.com-list {
+    .first-level {
+        font-family: $font-titles;
+        font-size:$font-18;
+        line-height: $line-25;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .sub-level {
+        font-size:$font-14;
+        line-height: $line-16;
+    }
+}

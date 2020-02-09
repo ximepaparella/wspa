@@ -1,0 +1,16 @@
+.mod-call-to-action {
+    height:400px;
+    background-position: center center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    &.--gift {
+        background-image: url('../../img/call-to-action/gift.jpg');
+    }
+
+    &.--appointment {
+        background-image: url('../../img/call-to-action/appointment.jpg');
+    }
+}
