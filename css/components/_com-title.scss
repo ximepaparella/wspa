@@ -4,12 +4,16 @@
 
     /*Especificacion para modulos de Tratamientos Verticales*/
     .--vertical & {
-            padding-bottom:$px-15;
+        padding-bottom: $px-15;
     }
 
-    /*Especificacion para modulos de Tratamientos*/
+    /*Especificacion para modulos de Tratamientos Horizontales */
     .mod-treatment & {
         margin: 0;
+        font-size: $px-28;
+        line-height: $line-28;
+        font-family: $font-titles;
+        font-weight: bold;
     }
 
     /*Especificacion para modulos de Call To Action*/
@@ -21,23 +25,15 @@
         text-align: right;
     }
 
-    
-    /*Especificacion para modulos de Servicios*/
-    .mod-services & {
-        margin-bottom: 80px;
-    }
 
     /*Especificacion para modulos de Servicios*/
     .mod-services & {
         margin-bottom: 80px;
     }
 
-    /*Especificacion para modulos de Tratamiento*/
-    .mod-treatment & {
-        font-size: $px-28;
-        line-height: $line-28;
-        font-family: $font-titles;
-        font-weight: bold;
+    /*Especificacion para modulos de Servicios*/
+    .mod-circuits & {
+        position: relative;
     }
 
     /*PAGE TITLE*/
@@ -52,6 +48,15 @@
         .page-title {
             padding: $px-5 0;
             line-height: $line-40;
+        }
+    }
+
+    /*Especificacion para modulos de Circuitos de Agua*/
+    .mod-circuits & {
+        .page-title {
+            padding-bottom: $px-10;
+            line-height: $line-30;
+            text-align: left;
         }
     }
 
@@ -77,6 +82,29 @@
             margin-bottom: $px-5;
         }
 
+        /*Especificacion para modulos de Tratamientos*/
+        .mod-circuits & {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: $px-5;
+            text-align: left;
+        }
+
+    }
+
+    /*PRE TITLE*/
+    .sub-title {
+        text-align: center;
+        font-family: $font-default;
+        font-size: $font-18;
+        padding-bottom: $px-10;
+        line-height: $line-18;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: bold;
+            font-family: $font-titles;
+        }
     }
 
 }

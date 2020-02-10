@@ -239,6 +239,16 @@ a {
   margin-bottom: 1.875em;
 }
 
+.hlp-border-left-before:before {
+  border-left: 1px solid #CBC9BE;
+  content: "";
+  position: absolute;
+  left: -5%;
+  width: 1px;
+  height: 100%;
+  top: 0;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
@@ -1903,6 +1913,17 @@ ul.bxslider {
   margin-right: 0.9375em;
 }
 
+.mod-circuits {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod-circuits div {
+  padding: 1.875em 1.25em;
+}
+
 /********** COMPONENTS **********/
 .com-logo {
   font-size: 1.5625rem;
@@ -1971,14 +1992,15 @@ ul.bxslider {
   text-align: center;
   margin: 1.25em 0;
   /*Especificacion para modulos de Tratamientos Verticales*/
-  /*Especificacion para modulos de Tratamientos*/
+  /*Especificacion para modulos de Tratamientos Horizontales */
   /*Especificacion para modulos de Call To Action*/
   /*Especificacion para modulos de Servicios*/
   /*Especificacion para modulos de Servicios*/
-  /*Especificacion para modulos de Tratamiento*/
   /*PAGE TITLE*/
   /*Especificacion para modulos de Call To Action*/
+  /*Especificacion para modulos de Circuitos de Agua*/
   /*TREATMENT TITLE*/
+  /*PRE TITLE*/
   /*PRE TITLE*/
 }
 
@@ -1988,6 +2010,10 @@ ul.bxslider {
 
 .mod-treatment .com-title {
   margin: 0;
+  font-size: 1.75em;
+  line-height: 2.1875rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 .mod-call-to-action.--left .com-title {
@@ -2002,15 +2028,8 @@ ul.bxslider {
   margin-bottom: 80px;
 }
 
-.mod-services .com-title {
-  margin-bottom: 80px;
-}
-
-.mod-treatment .com-title {
-  font-size: 1.75em;
-  line-height: 2.1875rem;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+.mod-circuits .com-title {
+  position: relative;
 }
 
 .com-title .page-title {
@@ -2022,6 +2041,12 @@ ul.bxslider {
 .mod-call-to-action .com-title .page-title {
   padding: 0.3125em 0;
   line-height: 2.9375rem;
+}
+
+.mod-circuits .com-title .page-title {
+  padding-bottom: 0.625em;
+  line-height: 2.3125rem;
+  text-align: left;
 }
 
 .com-title .treatment-title {
@@ -2037,12 +2062,34 @@ ul.bxslider {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   /*Especificacion para modulos de Tratamientos*/
+  /*Especificacion para modulos de Tratamientos*/
 }
 
 .mod-treatment .com-title .pre-title {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.3125em;
+}
+
+.mod-circuits .com-title .pre-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.3125em;
+  text-align: left;
+}
+
+.com-title .sub-title {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  padding-bottom: 0.625em;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.com-title .sub-title strong {
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
 }
 
 .com-grid-item {

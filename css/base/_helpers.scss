@@ -1,9 +1,9 @@
 .hlp-hidden {
-    display:none;
+    display: none;
 }
 
 .hlp-visible {
-    display:block;
+    display: block;
 }
 
 .hlp-text-center {
@@ -31,35 +31,35 @@
 }
 
 .hlp-white {
-    color:$white;
+    color: $white;
 }
 
 .hlp-black {
-    color:$black;
+    color: $black;
 }
 
 .hlp-primary {
-    color:$primary;
+    color: $primary;
 }
 
 .hlp-secondary {
-    color:$secondary;
+    color: $secondary;
 }
 
 .hlp-third {
-    color:$third;
+    color: $third;
 }
 
 .hlp-bg-primary {
-    background-color:$primary;
+    background-color: $primary;
 }
 
 .hlp-bg-secondary {
-    background-color:$secondary;
+    background-color: $secondary;
 }
 
 .hlp-bg-third {
-    background-color:$third;
+    background-color: $third;
 }
 
 .hlp_uppercase {
@@ -67,6 +67,18 @@
 }
 
 .mb-30 {
-    margin-bottom:$px-30;
+    margin-bottom: $px-30;
 }
 
+.hlp-border-left-before {
+    &:before {
+        border-left: 1px solid $secondary;
+        content:"";
+        position:absolute;
+        left:-5%;
+        width:1px;
+        height:100%;
+        top:0;
+
+    }
+}
