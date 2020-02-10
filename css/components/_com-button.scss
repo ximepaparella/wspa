@@ -1,30 +1,35 @@
 .com-button {
-    padding:$px-10 $px-25;
+    padding: $px-10 $px-25;
     background-color: $secondary;
 
     &:hover {
         opacity: 0.8;
     }
 
-     /*Especificacion para texto de Slider */
+    /*Especificacion para texto de Slider */
     .--text & {
-        background-color:$white;
-        color:$primary;
-        width:30%;
+        background-color: $white;
+        color: $primary;
+        width: 30%;
     }
 
     /*Especificacion para Modulo call to action */
     .mod-call-to-action & {
         display: inline-block;
-        margin-top:$px-10;
+        margin-top: $px-10;
     }
 
-      /*Especificacion para Tratamientos Simples */
-      .com-actions & {
-          margin-bottom:$px-10;
-          background-color:#727272;
-          color:$white;
-          font-size: $font-14;
-      }
+    /*Especificacion para Tratamientos Simples */
+    .com-actions & {
+        margin-bottom: $px-10;
+        background-color: #727272;
+        color: $white;
+        font-size: $font-14;
+    }
+
+    /*Especificacion para modulos de Tratamientos Verticales*/
+    .--vertical & {
+        margin: $px-15 0 0 0;
+    }
 
 }

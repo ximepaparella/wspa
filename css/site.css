@@ -235,6 +235,10 @@ a {
   text-transform: uppercase;
 }
 
+.mb-30 {
+  margin-bottom: 1.875em;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
@@ -1722,6 +1726,7 @@ ul.bxslider {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   /* Tratamiento Simple */
+  /* Tratamiento Vertical */
 }
 
 .mod-treatment .--description {
@@ -1729,6 +1734,10 @@ ul.bxslider {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 0.625em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mod-treatment.--simple {
@@ -1787,7 +1796,7 @@ ul.bxslider {
   content: "";
   width: 100%;
   position: absolute;
-  bottom: 4px;
+  bottom: 11px;
 }
 
 .mod-treatment.--simple .body {
@@ -1814,10 +1823,24 @@ ul.bxslider {
   line-height: 1.3125rem;
 }
 
+.mod-treatment.--vertical {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mod-treatment.--vertical .--description {
+  padding: 0.9375em;
+}
+
 .mod-page-title {
   margin-top: -80px;
   height: 450px;
-  background-image: url(../../img/bg-tratamientos.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1831,6 +1854,15 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mod-page-title.--tratamientos {
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos.jpg);
+}
+
+.mod-page-title.--circuitos {
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-circuitos.jpg);
+  background-position: center bottom;
 }
 
 .mod-page-title h1 {
@@ -1861,6 +1893,14 @@ ul.bxslider {
 
 .mod-list:first-of-type {
   padding: 3.125em 0 3.125em 0;
+}
+
+.mod-grid .lay .col-6 {
+  max-width: 48%;
+}
+
+.mod-grid .lay .col-6:first-of-type {
+  margin-right: 0.9375em;
 }
 
 /********** COMPONENTS **********/
@@ -1898,6 +1938,7 @@ ul.bxslider {
   /*Especificacion para texto de Slider */
   /*Especificacion para Modulo call to action */
   /*Especificacion para Tratamientos Simples */
+  /*Especificacion para modulos de Tratamientos Verticales*/
 }
 
 .com-button:hover {
@@ -1922,9 +1963,14 @@ ul.bxslider {
   font-size: 0.875rem;
 }
 
+.--vertical .com-button {
+  margin: 0.9375em 0 0 0;
+}
+
 .com-title {
   text-align: center;
   margin: 1.25em 0;
+  /*Especificacion para modulos de Tratamientos Verticales*/
   /*Especificacion para modulos de Tratamientos*/
   /*Especificacion para modulos de Call To Action*/
   /*Especificacion para modulos de Servicios*/
@@ -1934,6 +1980,10 @@ ul.bxslider {
   /*Especificacion para modulos de Call To Action*/
   /*TREATMENT TITLE*/
   /*PRE TITLE*/
+}
+
+.--vertical .com-title {
+  padding-bottom: 0.9375em;
 }
 
 .mod-treatment .com-title {
@@ -2099,6 +2149,10 @@ ul.bxslider {
   line-height: 1.4375rem;
 }
 
+.--vertical .com-list {
+  padding-bottom: 1.5625em;
+}
+
 .com-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2108,6 +2162,16 @@ ul.bxslider {
       -ms-flex-direction: column;
           flex-direction: column;
   /*Especificacion para modulos de un solo Precio */
+  /*Especificacion para modulos de un solo Precio */
+  /*Especificacion para modulos de Tratamientos Verticales*/
+}
+
+.com-price:last-of-type {
+  margin-bottom: 0.625em;
+}
+
+.com-price:last-of-type:after {
+  display: none;
 }
 
 .com-price h5 {
@@ -2115,6 +2179,10 @@ ul.bxslider {
   font-size: 1.875rem;
   line-height: 2.3125rem;
   font-weight: bold;
+}
+
+.com-price h6 {
+  padding-bottom: 0.3125em;
 }
 
 .one-price .com-price {
@@ -2132,6 +2200,43 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.multiple-price .com-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.multiple-price .com-price:after {
+  content: " ";
+  border-bottom: 1px solid #CBC9BE;
+  margin: 1.25em 0;
+  width: 10%;
+}
+
+.--vertical .com-price {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.com-price.--double {
+  width: 100%;
 }
 
 .com-info {

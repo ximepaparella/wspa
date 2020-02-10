@@ -1,11 +1,20 @@
 .mod-page-title {
     margin-top:-80px;
     height:450px;
-    background-image: url(../../img/bg-tratamientos.jpg);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &.--tratamientos {
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos.jpg);
+    }
+
+    &.--circuitos {
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-circuitos.jpg);
+        background-position: center bottom;
+    }
 
     h1 {
         padding-top:$px-20;
