@@ -29,6 +29,9 @@
 @import 'modules/mod-treatment';
 
 @import 'modules/mod-img-grid';
+@import 'modules/mod-page-title';
+
+@import 'modules/mod-list'; 
 
 /********** COMPONENTS **********/
 @import 'components/com-logo';
@@ -45,3 +48,5 @@
 
 @import 'components/com-map';
 @import 'components/com-info';
+
+@import 'components/com-actions';

@@ -1,0 +1,11 @@
+.mod-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 0 $px-50 0;
+
+    &:first-of-type {
+        padding:$px-50  0 $px-50 0; 
+    }
+}

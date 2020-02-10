@@ -1721,6 +1721,7 @@ ul.bxslider {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  /* Tratamiento Simple */
 }
 
 .mod-treatment .--description {
@@ -1728,6 +1729,138 @@ ul.bxslider {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.mod-treatment.--simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5em 0;
+  padding: 1.875em;
+}
+
+.mod-treatment.--simple.hlp-bg-secondary {
+  background-color: #D5D4D0;
+}
+
+.mod-treatment.--simple.hlp-bg-secondary .header h2, .mod-treatment.--simple.hlp-bg-secondary .header h5 {
+  background-color: #D5D4D0;
+}
+
+.mod-treatment.--simple .header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod-treatment.--simple .header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  background-color: #EFEDE1;
+  z-index: 10;
+}
+
+.mod-treatment.--simple .header h5 {
+  background-color: #EFEDE1;
+  z-index: 10;
+  padding: 0 0.3125em;
+}
+
+.mod-treatment.--simple .header:after {
+  border-bottom: 2px dotted;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 4px;
+}
+
+.mod-treatment.--simple .body {
+  margin-top: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mod-treatment.--simple .body p {
+  max-width: 80%;
+  padding-right: 1.5625em;
+  font-size: 0.875em;
+  line-height: 1.3125rem;
+}
+
+.mod-page-title {
+  margin-top: -80px;
+  height: 450px;
+  background-image: url(../../img/bg-tratamientos.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod-page-title h1 {
+  padding-top: 1.25em;
+  color: #FFF;
+  font-size: 3.125rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mod-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 3.125em 0;
+}
+
+.mod-list:first-of-type {
+  padding: 3.125em 0 3.125em 0;
 }
 
 /********** COMPONENTS **********/
@@ -1764,6 +1897,7 @@ ul.bxslider {
   background-color: #CBC9BE;
   /*Especificacion para texto de Slider */
   /*Especificacion para Modulo call to action */
+  /*Especificacion para Tratamientos Simples */
 }
 
 .com-button:hover {
@@ -1779,6 +1913,13 @@ ul.bxslider {
 .mod-call-to-action .com-button {
   display: inline-block;
   margin-top: 0.625em;
+}
+
+.com-actions .com-button {
+  margin-bottom: 0.625em;
+  background-color: #727272;
+  color: #FFF;
+  font-size: 0.875rem;
 }
 
 .com-title {
@@ -2026,5 +2167,21 @@ ul.bxslider {
 
 .com-info strong {
   font-weight: bold;
+}
+
+.com-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=site.css.map */

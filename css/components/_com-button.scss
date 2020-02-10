@@ -19,4 +19,12 @@
         margin-top:$px-10;
     }
 
+      /*Especificacion para Tratamientos Simples */
+      .com-actions & {
+          margin-bottom:$px-10;
+          background-color:#727272;
+          color:$white;
+          font-size: $font-14;
+      }
+
 }
