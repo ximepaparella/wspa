@@ -25,16 +25,19 @@
 @import 'modules/mod-social';
 @import 'modules/mod-footer';
 
-@import 'modules/mod-bg-image';
 @import 'modules/mod-promo-treatment';
 @import 'modules/mod-treatment';
+
+@import 'modules/mod-img-grid';
 
 /********** COMPONENTS **********/
 @import 'components/com-logo';
 @import 'components/com-whatsapp';
 @import 'components/com-button';
-
+ 
 @import 'components/com-title';
+@import 'components/com-grid-item';
+
 @import 'components/com-icon-text';
 @import 'components/com-image';
 @import 'components/com-list';

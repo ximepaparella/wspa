@@ -237,8 +237,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?d141zw");
-  src: url("../../fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?d141zw") format("truetype"), url("../../fonts/icomoon.woff?d141zw") format("woff"), url("../../fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -341,6 +341,10 @@ a {
 
 .row.no-gap {
   margin: 0;
+}
+
+.row.mod-img-grid {
+  margin-bottom: 0;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -1410,7 +1414,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url("../../img/slides/bx_loader.gif") center center no-repeat #ffffff;
+  background: url("http://estudioequis.com.ar/wspa/img/slides/bx_loader.gif") center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1462,7 +1466,7 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url("../../img/slides/controls.png") no-repeat 0 -32px;
+  background: url("http://estudioequis.com.ar/wspa/img/slides/controls.png") no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-prev:hover,
@@ -1472,7 +1476,7 @@ ul.bxslider {
 
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url("../../img/slides/controls.png") no-repeat -43px -32px;
+  background: url("http://estudioequis.com.ar/wspa/img/slides/controls.png") no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-next:hover,
@@ -1506,7 +1510,7 @@ ul.bxslider {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url("../../img/slides/controls.png") -86px -11px no-repeat;
+  background: url("http://estudioequis.com.ar/wspa/img/slides/controls.png") -86px -11px no-repeat;
   margin: 0 3px;
 }
 
@@ -1522,7 +1526,7 @@ ul.bxslider {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url("../../img/slides/controls.png") -86px -44px no-repeat;
+  background: url("http://estudioequis.com.ar/wspa/img/slides/controls.png") -86px -44px no-repeat;
   margin: 0 3px;
 }
 
@@ -1646,11 +1650,11 @@ ul.bxslider {
 }
 
 .mod-call-to-action.--gift {
-  background-image: url("../../img/call-to-action/gift.jpg");
+  background-image: url("http://estudioequis.com.ar/wspa/img/call-to-action/gift.jpg");
 }
 
 .mod-call-to-action.--appointment {
-  background-image: url("../../img/call-to-action/appointment.jpg");
+  background-image: url("http://estudioequis.com.ar/wspa/img/call-to-action/appointment.jpg");
 }
 
 .mod-social {
@@ -1839,6 +1843,61 @@ ul.bxslider {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.3125em;
+}
+
+.com-grid-item {
+  position: relative;
+}
+
+.com-grid-item:nth-child(1) {
+  margin: 0 1.25em 1.25em 0;
+}
+
+.com-grid-item:nth-child(2) {
+  margin: 0 1.25em 0 0;
+}
+
+.com-grid-item:nth-child(3) {
+  margin: 0;
+}
+
+.com-grid-item:nth-child(4) {
+  margin: 0 0 1.25em 1.25em;
+}
+
+.com-grid-item:nth-child(5) {
+  margin: 0 0 1.25em 1.25em;
+}
+
+.com-grid-item .--description {
+  display: none;
+}
+
+.com-grid-item:hover .--description {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #A3A9B2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.com-grid-item:hover .--description h3 {
+  color: #FFF;
+  text-align: center;
+  padding-bottom: 0.9375em;
+  letter-spacing: 3px;
 }
 
 .com-icon-text {
