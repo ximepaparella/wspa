@@ -36,6 +36,7 @@
 
 @import 'modules/mod-circuits'; 
 
+@import 'modules/mod-form';
 
 
 /********** COMPONENTS **********/
@@ -54,3 +55,7 @@
 @import 'components/com-map';
 @import 'components/com-info';
 @import 'components/com-actions';
+
+@import 'components/com-text';
+
+@import 'components/com-input';

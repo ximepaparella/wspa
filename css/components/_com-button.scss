@@ -6,6 +6,15 @@
         opacity: 0.8;
     }
 
+    
+    /*Especificacion para Boton de Formulario */
+    input {
+        background-color:transparent;
+        text-transform: uppercase;
+        color:$text;
+        cursor:pointer;
+    }
+
     /*Especificacion para texto de Slider */
     .--text & {
         background-color: $white;

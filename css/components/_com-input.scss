@@ -1,0 +1,24 @@
+.com-input {
+    width:80%;
+    margin:$px-10 0;
+    input {
+        background-color: $third;
+        width:100%;
+        height:$px-30;
+        padding:$px-25;
+        font-family: $font-default;
+        font-size:$font-15;
+        color:$primary;
+    }
+
+    textarea {
+        background-color: $third;
+        width:100%;
+        height:180px;
+        padding:$px-25;
+        font-family: $font-default;
+        font-size:$font-15;
+        color:$primary;
+        text-align: left;
+    }
+}

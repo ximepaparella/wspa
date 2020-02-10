@@ -2,6 +2,8 @@
     text-align: center;
     margin: $px-20 0;
 
+
+
     /*Especificacion para modulos de Tratamientos Verticales*/
     .--vertical & {
         padding-bottom: $px-15;
@@ -51,6 +53,14 @@
         }
     }
 
+    /*Especificacion para modulos de Tratamientos Horizontales */
+    .mod-policies & {
+        .page-title {
+            text-align:left;
+            font-size: $font-30;
+        }
+    }
+
     /*Especificacion para modulos de Circuitos de Agua*/
     .mod-circuits & {
         .page-title {
@@ -60,13 +70,21 @@
         }
     }
 
+    /*Especificacion para modulos de Contacto*/
+    .mod-contact & {
+        .page-title {
+            font-size: $font-18;
+            text-transform: uppercase;
+        }
+    }
+
     /*TREATMENT TITLE*/
     .treatment-title {
         font-size: $font-40;
         font-family: $font-titles;
         font-weight: bold;
     }
-
+ 
     /*PRE TITLE*/
     .pre-title {
         letter-spacing: 3px;
@@ -105,6 +123,14 @@
             font-weight: bold;
             font-family: $font-titles;
         }
+    }
+
+    /*PARAGRAPH*/
+    P {
+        font-size: $font-14;
+        line-height: $line-17;
+        text-align: left;
+        padding: $px-20 0;
     }
 
 }
