@@ -187,3 +187,13 @@ ul.bxslider {
   }
 
 }
+
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+  .--text {
+    top: calc(100% - 65%);
+    left: calc(100% - 80%);
+    width: 60%;
+    padding:$px-30 $px-20;
+  }
+}

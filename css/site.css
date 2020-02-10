@@ -1585,6 +1585,15 @@ ul.bxslider {
   margin-bottom: 1.5625em;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .--text {
+    top: calc(100% - 65%);
+    left: calc(100% - 80%);
+    width: 60%;
+    padding: 1.875em 1.25em;
+  }
+}
+
 .mod-intro {
   display: -webkit-box;
   display: -ms-flexbox;
