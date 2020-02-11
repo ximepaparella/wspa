@@ -251,8 +251,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
-  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("../../fonts/icomoon.eot?d141zw");
+  src: url("../../fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?d141zw") format("truetype"), url("../../fonts/icomoon.woff?d141zw") format("woff"), url("../../fonts/icomoon.svg?d141zw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -2412,5 +2412,36 @@ ul.bxslider {
   font-size: 0.9375rem;
   color: #4D4D4D;
   text-align: left;
+}
+
+.com-floating-button {
+  position: fixed;
+  top: 50%;
+  padding: 0.9375em;
+  right: -188px;
+  background-color: #EFEDE1;
+  z-index: 10;
+}
+
+.com-floating-button:hover {
+  right: 0;
+}
+
+.com-floating-button a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.com-floating-button a .icon-w-solid {
+  margin-right: 0.625em;
+  font-size: 1.5625rem;
 }
 /*# sourceMappingURL=site.css.map */

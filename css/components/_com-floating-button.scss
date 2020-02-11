@@ -1,0 +1,26 @@
+.com-floating-button {
+    position: fixed;
+    top: 50%;
+    padding: $px-15;
+    right: -188px;
+    background-color: $third;
+    z-index: 10;
+   
+
+    &:hover {
+        right:0;
+    }
+
+    a {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .icon-w-solid {
+            margin-right: $px-10;
+            font-size: $font-25;
+        }
+    }
+
+
+}
