@@ -1,18 +1,33 @@
 .mod-page-title {
     margin-top:-80px;
     height:450px;
-    
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     &.--tratamientos {
-        background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos.jpg);
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos-2.jpg);
+        
     }
 
     &.--circuitos {
         background-image: url(http://estudioequis.com.ar/wspa/img/bg-circuitos.jpg);
+        background-position: center bottom;
+    }
+
+    &.--contacto {
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-membresias.jpg);
+        background-position: center bottom;
+    }
+    
+    &.--yoga {
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-yoga.jpg);
+    }
+
+    &.--membresias {
+        background-image: url(http://estudioequis.com.ar/wspa/img/bg-membresias.jpg);
         background-position: center bottom;
     }
 

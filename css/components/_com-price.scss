@@ -20,6 +20,11 @@
         padding-bottom:$px-5;
     }
 
+    span {
+        font-family: $font-titles;
+        font-size:$font-14;
+    }
+
     /*Especificacion para modulos de un solo Precio */
     .one-price & {
         display: flex;

@@ -1,10 +1,7 @@
-.mod-list {
+.mod-yoga {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    &:first-of-type {
-        padding:$px-50  0 $px-10 0; 
-    }
+    padding:$px-50 0 0 0;
 }

@@ -26,6 +26,14 @@
             }
         }
 
+        &.hlp-bg-third {
+            .header {
+                h2, h5 {
+                    background-color:$third;
+                }
+            }
+        }
+
         .header {
             position:relative;
             display: flex;
@@ -37,7 +45,7 @@
                 font-family: $font-titles;
                 font-size: $px-30;
                 font-weight: bold;
-                background-color:$third;
+                background-color:$white;
                 z-index: 10;
             }
 
@@ -68,6 +76,26 @@
                 padding-right: $px-25;
                 font-size: $px-14;
                 line-height: $line-14;
+            }
+        }
+
+        &.--no-price {
+            margin: $px-20 0;
+            padding: $px-10;
+            .header {
+                &:after {
+                    border-bottom:2px dotted;
+                    content:"";
+                    width:100%;
+                    position: absolute;
+                    bottom:3px;
+                }
+            }
+
+            .body {
+                p {
+                    max-width: 100%;
+                }
             }
         }
     }

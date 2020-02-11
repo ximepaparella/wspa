@@ -251,8 +251,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?d141zw");
-  src: url("../../fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?d141zw") format("truetype"), url("../../fonts/icomoon.woff?d141zw") format("woff"), url("../../fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1660,7 +1660,7 @@ ul.bxslider {
 }
 
 .mod-call-to-action {
-  height: 400px;
+  padding: 2.5em 0;
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1770,6 +1770,10 @@ ul.bxslider {
   background-color: #D5D4D0;
 }
 
+.mod-treatment.--simple.hlp-bg-third .header h2, .mod-treatment.--simple.hlp-bg-third .header h5 {
+  background-color: #EFEDE1;
+}
+
 .mod-treatment.--simple .header {
   position: relative;
   display: -webkit-box;
@@ -1791,7 +1795,7 @@ ul.bxslider {
   font-family: "Playfair Display", serif;
   font-size: 1.875em;
   font-weight: bold;
-  background-color: #EFEDE1;
+  background-color: #FFF;
   z-index: 10;
 }
 
@@ -1833,6 +1837,23 @@ ul.bxslider {
   line-height: 1.3125rem;
 }
 
+.mod-treatment.--simple.--no-price {
+  margin: 1.25em 0;
+  padding: 0.625em;
+}
+
+.mod-treatment.--simple.--no-price .header:after {
+  border-bottom: 2px dotted;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+}
+
+.mod-treatment.--simple.--no-price .body p {
+  max-width: 100%;
+}
+
 .mod-treatment.--vertical {
   width: 100%;
   display: -webkit-box;
@@ -1851,6 +1872,7 @@ ul.bxslider {
 .mod-page-title {
   margin-top: -80px;
   height: 450px;
+  background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1867,11 +1889,25 @@ ul.bxslider {
 }
 
 .mod-page-title.--tratamientos {
-  background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos.jpg);
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos-2.jpg);
 }
 
 .mod-page-title.--circuitos {
   background-image: url(http://estudioequis.com.ar/wspa/img/bg-circuitos.jpg);
+  background-position: center bottom;
+}
+
+.mod-page-title.--contacto {
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-membresias.jpg);
+  background-position: center bottom;
+}
+
+.mod-page-title.--yoga {
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-yoga.jpg);
+}
+
+.mod-page-title.--membresias {
+  background-image: url(http://estudioequis.com.ar/wspa/img/bg-membresias.jpg);
   background-position: center bottom;
 }
 
@@ -1898,11 +1934,10 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 0 3.125em 0;
 }
 
 .mod-list:first-of-type {
-  padding: 3.125em 0 3.125em 0;
+  padding: 3.125em 0 0.625em 0;
 }
 
 .mod-grid .lay .col-6 {
@@ -1939,6 +1974,23 @@ ul.bxslider {
           align-items: center;
 }
 
+.mod-yoga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.125em 0 0 0;
+}
+
 /********** COMPONENTS **********/
 .com-logo {
   font-size: 1.5625rem;
@@ -1946,6 +1998,15 @@ ul.bxslider {
 
 .com-logo .icon-logo:before {
   color: #FFF;
+}
+
+.com-link {
+  font-weight: bold;
+}
+
+.mod-circuits .com-link {
+  padding-top: 10px;
+  display: block;
 }
 
 .com-whatsapp {
@@ -1972,6 +2033,7 @@ ul.bxslider {
   padding: 0.625em 1.5625em;
   background-color: #CBC9BE;
   /*Especificacion para Boton de Formulario */
+  /*Especificacion para Modulo call to action */
   /*Especificacion para texto de Slider */
   /*Especificacion para Modulo call to action */
   /*Especificacion para Tratamientos Simples */
@@ -1987,6 +2049,11 @@ ul.bxslider {
   text-transform: uppercase;
   color: #707070;
   cursor: pointer;
+}
+
+.mod-circuits .com-button {
+  display: inline-block;
+  margin-top: 0.3125em;
 }
 
 .--text .com-button {
@@ -2135,6 +2202,10 @@ ul.bxslider {
   padding: 1.25em 0;
 }
 
+.mod-yoga .com-title p {
+  text-align: center;
+}
+
 .com-grid-item {
   position: relative;
 }
@@ -2273,6 +2344,11 @@ ul.bxslider {
 
 .com-price h6 {
   padding-bottom: 0.3125em;
+}
+
+.com-price span {
+  font-family: "Playfair Display", serif;
+  font-size: 0.875rem;
 }
 
 .one-price .com-price {

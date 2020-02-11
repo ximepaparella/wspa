@@ -15,6 +15,12 @@
         cursor:pointer;
     }
 
+       /*Especificacion para Modulo call to action */
+       .mod-circuits & {
+        display: inline-block;
+        margin-top: $px-5
+    }
+
     /*Especificacion para texto de Slider */
     .--text & {
         background-color: $white;
