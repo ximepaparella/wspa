@@ -1,9 +1,13 @@
 .com-button {
     padding: $px-10 $px-25;
     background-color: $secondary;
+    transition: all .5s ease-in;
 
     &:hover {
         opacity: 0.8;
+        transition: all .5s ease-out;
+        background-color: $primary;
+        color:$white;
     }
 
     
@@ -24,8 +28,14 @@
     /*Especificacion para texto de Slider */
     .--text & {
         background-color: $white;
+        border: 2px solid $white;
         color: $primary;
         width: 30%;
+
+        &:hover {
+            background-color:transparent;
+            color:$white;
+        }
     }
 
     /*Especificacion para Modulo call to action */

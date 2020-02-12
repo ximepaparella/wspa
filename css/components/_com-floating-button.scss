@@ -5,10 +5,13 @@
     right: -188px;
     background-color: $third;
     z-index: 10;
-   
+    transform: translateX(0px);
+    transition-duration: 0.5s;
+
 
     &:hover {
-        right:0;
+        transform: translateX(-188px);
+        transition-duration: 0.5s;
     }
 
     a {

@@ -2021,7 +2021,12 @@ ul.bxslider {
 }
 
 .com-whatsapp:hover {
-  background-color: #FFF;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50%, white));
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   color: #4D4D4D;
 }
 
@@ -2032,6 +2037,8 @@ ul.bxslider {
 .com-button {
   padding: 0.625em 1.5625em;
   background-color: #CBC9BE;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   /*Especificacion para Boton de Formulario */
   /*Especificacion para Modulo call to action */
   /*Especificacion para texto de Slider */
@@ -2042,6 +2049,10 @@ ul.bxslider {
 
 .com-button:hover {
   opacity: 0.8;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  background-color: #4D4D4D;
+  color: #FFF;
 }
 
 .com-button input {
@@ -2058,8 +2069,14 @@ ul.bxslider {
 
 .--text .com-button {
   background-color: #FFF;
+  border: 2px solid #FFF;
   color: #4D4D4D;
   width: 30%;
+}
+
+.--text .com-button:hover {
+  background-color: transparent;
+  color: #FFF;
 }
 
 .mod-call-to-action .com-button {
@@ -2252,6 +2269,8 @@ ul.bxslider {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .com-grid-item:hover .--description h3 {
@@ -2269,6 +2288,8 @@ ul.bxslider {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
 }
 
 .com-icon-text h4 {
@@ -2497,10 +2518,17 @@ ul.bxslider {
   right: -188px;
   background-color: #EFEDE1;
   z-index: 10;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .com-floating-button:hover {
-  right: 0;
+  -webkit-transform: translateX(-188px);
+          transform: translateX(-188px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .com-floating-button a {

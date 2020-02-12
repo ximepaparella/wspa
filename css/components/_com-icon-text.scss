@@ -1,6 +1,8 @@
 .com-icon-text {
     display: flex;
     flex-direction: row;
+    animation-name: fadeInLeft;
+
     h4 {
         font-family: $font-titles;
         font-size: $px-22;
