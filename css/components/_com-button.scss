@@ -1,13 +1,14 @@
 .com-button {
     padding: $px-10 $px-25;
-    background-color: $secondary;
+    background-color: $primary;
     transition: all .5s ease-in;
+    color:$white;
 
     &:hover {
         opacity: 0.8;
         transition: all .5s ease-out;
-        background-color: $primary;
-        color:$white;
+        background-color: $secondary;
+        color: $text;
     }
 
     
@@ -50,6 +51,8 @@
         background-color: #727272;
         color: $white;
         font-size: $font-14;
+        width: 170px;
+        text-align: center;
     }
 
     /*Especificacion para modulos de Tratamientos Verticales*/

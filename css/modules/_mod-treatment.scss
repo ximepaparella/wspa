@@ -10,6 +10,10 @@
         align-items: center
     }
 
+    .mod-slider-promo & {
+        margin-top:$px-50;
+    }
+
     /* Tratamiento Simple */
     &.--simple {
         display: flex;
@@ -46,12 +50,12 @@
                 font-size: $px-30;
                 font-weight: bold;
                 background-color:$white;
-                z-index: 10;
+                z-index: 9;
             }
 
             h5 {
                 background-color:$third;
-                z-index: 10;
+                z-index: 9;
                 padding:0 $px-5;
             }
 

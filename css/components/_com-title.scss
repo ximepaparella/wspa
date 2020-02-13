@@ -73,8 +73,7 @@
     /*Especificacion para modulos de Contacto*/
     .mod-contact & {
         .page-title {
-            font-size: $font-18;
-            text-transform: uppercase;
+            margin-bottom:$px-20;
         }
     }
 
@@ -136,6 +135,15 @@
     .mod-yoga & {
         p {
             text-align: center;
+        }
+    }
+
+    .mod-intro & {
+        justify-content: center;
+        p {
+            text-align: center;
+            max-width: 75%;
+            margin:$px-15 auto 0 auto;
         }
     }
 

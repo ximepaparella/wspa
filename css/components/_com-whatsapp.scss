@@ -1,22 +1,23 @@
 .com-whatsapp {
     border: 1px solid $white;
     padding:$px-8 $px-15;
-    color:$white;
+    color:$text;
+    background-color:$white;
 
     .icon-w-outline {
-        color:$white;
+        color:$text;
         padding-right: $px-5;
     }
 
     &:hover {
-        background: linear-gradient(to right, black 50%, white 50%);
+        background: linear-gradient(to right, white 50%, transparent 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all .5s ease-out;
-        color:$primary;
+        color:$white;
 
         .icon-w-outline {
-            color:$primary;
+            color:$white;
         }
     }
 }

@@ -272,18 +272,8 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon-check:before {
+  content: "\e90e";
 }
 
 .icon-sauna:before {
@@ -1656,7 +1646,7 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3.125em 0;
+  padding: 0 0 3.125em 0;
 }
 
 .mod-call-to-action {
@@ -1750,6 +1740,10 @@ ul.bxslider {
           align-items: center;
 }
 
+.mod-slider-promo .mod-treatment {
+  margin-top: 3.125em;
+}
+
 .mod-treatment.--simple {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1796,12 +1790,12 @@ ul.bxslider {
   font-size: 1.875em;
   font-weight: bold;
   background-color: #FFF;
-  z-index: 10;
+  z-index: 9;
 }
 
 .mod-treatment.--simple .header h5 {
   background-color: #EFEDE1;
-  z-index: 10;
+  z-index: 9;
   padding: 0 0.3125em;
 }
 
@@ -2012,33 +2006,35 @@ ul.bxslider {
 .com-whatsapp {
   border: 1px solid #FFF;
   padding: 0.5em 0.9375em;
-  color: #FFF;
+  color: #707070;
+  background-color: #FFF;
 }
 
 .com-whatsapp .icon-w-outline {
-  color: #FFF;
+  color: #707070;
   padding-right: 0.3125em;
 }
 
 .com-whatsapp:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50%, white));
-  background: linear-gradient(to right, black 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, transparent));
+  background: linear-gradient(to right, white 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-  color: #4D4D4D;
+  color: #FFF;
 }
 
 .com-whatsapp:hover .icon-w-outline {
-  color: #4D4D4D;
+  color: #FFF;
 }
 
 .com-button {
   padding: 0.625em 1.5625em;
-  background-color: #CBC9BE;
+  background-color: #4D4D4D;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
+  color: #FFF;
   /*Especificacion para Boton de Formulario */
   /*Especificacion para Modulo call to action */
   /*Especificacion para texto de Slider */
@@ -2051,8 +2047,8 @@ ul.bxslider {
   opacity: 0.8;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-  background-color: #4D4D4D;
-  color: #FFF;
+  background-color: #CBC9BE;
+  color: #707070;
 }
 
 .com-button input {
@@ -2089,6 +2085,8 @@ ul.bxslider {
   background-color: #727272;
   color: #FFF;
   font-size: 0.875rem;
+  width: 170px;
+  text-align: center;
 }
 
 .--vertical .com-button {
@@ -2165,8 +2163,7 @@ ul.bxslider {
 }
 
 .mod-contact .com-title .page-title {
-  font-size: 1.125rem;
-  text-transform: uppercase;
+  margin-bottom: 1.25em;
 }
 
 .com-title .treatment-title {
@@ -2221,6 +2218,18 @@ ul.bxslider {
 
 .mod-yoga .com-title p {
   text-align: center;
+}
+
+.mod-intro .com-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mod-intro .com-title p {
+  text-align: center;
+  max-width: 75%;
+  margin: 0.9375em auto 0 auto;
 }
 
 .com-grid-item {
@@ -2322,7 +2331,7 @@ ul.bxslider {
   font-family: "Playfair Display", serif;
   font-size: 1.125rem;
   line-height: 2rem;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: bold;
 }
 
@@ -2376,10 +2385,10 @@ ul.bxslider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 60%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -2387,6 +2396,11 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.one-price .com-price h5 {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .multiple-price .com-price {
@@ -2513,39 +2527,13 @@ ul.bxslider {
 
 .com-floating-button {
   position: fixed;
-  top: 50%;
-  padding: 0.9375em;
-  right: -188px;
-  background-color: #EFEDE1;
+  bottom: 0.625em;
+  left: 0.625em;
   z-index: 10;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  display: block;
 }
 
-.com-floating-button:hover {
-  -webkit-transform: translateX(-188px);
-          transform: translateX(-188px);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.com-floating-button a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.com-floating-button a .icon-w-solid {
-  margin-right: 0.625em;
-  font-size: 1.5625rem;
+.com-floating-button img {
+  max-width: 300px;
 }
 /*# sourceMappingURL=site.css.map */

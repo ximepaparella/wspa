@@ -60,56 +60,34 @@
     <!-- /PAGE TITLE -->
 
     <!--SECTION CONTACT -->
-    <section class="mod-contact">
-        <div class="lay row">
-            <!-- FORM -->
-            <div class="col-6">
-                <div class="com-title">
-                    <h2 class="page-title">Completá tus datos y envianos tu consulta.</h2>
-                </div>
-                <form class="mod-form" method="post" action="contact.php">
-                    <div class="row no-gap">
-                        <formgroup class="com-input">
-                            <input id="form-name" name="name" type="text" placeholder="Nombre y Apellido *"
-                                required="required" data-error="El campo es obligatorio.">
-                        </formgroup>
-                        <formgroup class="com-input">
-                            <input id="form-email" name="email" type="email" placeholder="E-mail *" required="required"
-                                data-error="El campo es obligatorio.">
-                        </formgroup>
-                        <formgroup class="com-input">
-                            <input id="form-celular" name="celular" type="number" placeholder="Celular *"
-                                required="required" data-error="El campo es obligatorio.">
-                        </formgroup>
-                        <formgroup class="com-input">
-                            <textarea id="form-name" name="name" type="text" required="required"
-                                data-error="El campo es obligatorio.">Consulta *</textarea>
-                        </formgroup>
-
-                        <formgroup class="com-button">
-                            <input id="form-name" name="name" type="submit" />
-                        </formgroup>
-                    </div>
-                </form>
+    <section class="mod-contact  ">
+        <div class="row no-gap">
+            <!-- MAP -->
+            <div class="col-6 com-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.183404258393!2d-58.649995684775746!3d-34.3966839805137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca6b54f25ed31%3A0xd6ce5ee554e496af!2sWyndham%20Nordelta%20Tigre%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1581286690639!5m2!1ses!2sar"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-            <!-- /FORM -->
+            <!-- /MAP -->
 
             <!-- INFO -->
-            <div class="col-6 com-info">
+            <div class="col-6 com-info hlp-bg-third">
                 <p>
-                    <strong> LUNES Y MARTES: CERRADO</strong>
+                    <strong>Horarios</strong>
+                    <span>Lunes y Martes: Cerrado<br/> Miercoles a Domingos desde las 10 hrs a las 20 hrs.<br/> 
+                        Sábados de 10 a 21 hrs.</span>
                 </p>
                 <p>
-                    <strong>DIRECCIÓN</strong>
+                    <strong>Dirección</strong>
                     <span>Avenida del puerto 240, Bahía Grande, Nordelta</span>
                 </p>
                 <p>
-                    <strong>TURNOS Y CONSULTAS POR WHATSAPP</strong>
+                    <strong>Turnos y consultas por Whatsapp</strong>
                     <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
                         target="_blank">(+54 9 11) 3420-9545</a>
                 </p>
                 <p>
-                    <strong>EMAIL</strong>
+                    <strong>Email</strong>
                     <a href="mailto:wspa@hotelwyndhamnordelta.com">wspa@hotelwyndhamnordelta.com</a>
                 </p>
 
@@ -123,16 +101,6 @@
                 </div>
             </div>
             <!-- /INFO -->
-        </div>
-
-        <div class="row">
-            <!-- MAP -->
-            <div class="col-12 com-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.183404258393!2d-58.649995684775746!3d-34.3966839805137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca6b54f25ed31%3A0xd6ce5ee554e496af!2sWyndham%20Nordelta%20Tigre%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1581286690639!5m2!1ses!2sar"
-                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <!-- /MAP -->
         </div>
     </section>
     <!--/SECTION CONTACT -->
@@ -303,7 +271,7 @@
     <!--/SECTION CALL TO ACTION -->
 
     <!-- FOOTER -->
-    <section class="mod-footer hlp-bg-third">
+    <section class="mod-footer">
         <div class="lay">
             <div class="col-6">
                 <p>Copyright © Whyndham Spa. Todos los derechos reservados. By Estudio Equis.</p>
@@ -316,12 +284,11 @@
         </div>
     </section>
     <!-- /FOOTER -->
-
     <!-- Modulo Whatsapp -->
     <div id="com-floating-button" class="com-floating-button">
         <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
             target="_blank" id="whatsapp">
-            <i class="icon-w-solid"></i> TURNOS Y CONSULTAS</a>
+           <img src="img/wts-contacto.png">
     </div>
     <!-- /Modulo Whatsapp -->
 </body>
