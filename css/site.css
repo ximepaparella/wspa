@@ -1730,14 +1730,25 @@ ul.bxslider {
 }
 
 .mod-treatment .--description {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   padding: 0.625em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mod-treatment .--description .icon-check {
+  font-size: 0.875rem;
 }
 
 .mod-slider-promo .mod-treatment {
@@ -1760,11 +1771,13 @@ ul.bxslider {
   background-color: #D5D4D0;
 }
 
-.mod-treatment.--simple.hlp-bg-secondary .header h2, .mod-treatment.--simple.hlp-bg-secondary .header h5 {
+.mod-treatment.--simple.hlp-bg-secondary .header h2,
+.mod-treatment.--simple.hlp-bg-secondary .header h5 {
   background-color: #D5D4D0;
 }
 
-.mod-treatment.--simple.hlp-bg-third .header h2, .mod-treatment.--simple.hlp-bg-third .header h5 {
+.mod-treatment.--simple.hlp-bg-third .header h2,
+.mod-treatment.--simple.hlp-bg-third .header h5 {
   background-color: #EFEDE1;
 }
 
@@ -1861,6 +1874,13 @@ ul.bxslider {
 
 .mod-treatment.--vertical .--description {
   padding: 0.9375em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mod-page-title {
@@ -2342,6 +2362,7 @@ ul.bxslider {
 
 .--vertical .com-list {
   padding-bottom: 1.5625em;
+  min-height: 280px;
 }
 
 .com-price {

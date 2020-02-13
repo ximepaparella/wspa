@@ -3,15 +3,23 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
+
     .--description {
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
-        padding:$px-10;
-        align-items: center
+        padding: $px-10;
+        align-items: center;
+
+
+        .icon-check {
+            font-size: $font-14;
+        }
     }
 
     .mod-slider-promo & {
-        margin-top:$px-50;
+        margin-top: $px-50;
     }
 
     /* Tratamiento Simple */
@@ -22,24 +30,29 @@
         padding: $px-30;
 
         &.hlp-bg-secondary {
-            background-color:#D5D4D0;
+            background-color: #D5D4D0;
+
             .header {
-                h2, h5 {
-                    background-color:#D5D4D0;
+
+                h2,
+                h5 {
+                    background-color: #D5D4D0;
                 }
             }
         }
 
         &.hlp-bg-third {
             .header {
-                h2, h5 {
-                    background-color:$third;
+
+                h2,
+                h5 {
+                    background-color: $third;
                 }
             }
         }
 
         .header {
-            position:relative;
+            position: relative;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -49,27 +62,27 @@
                 font-family: $font-titles;
                 font-size: $px-30;
                 font-weight: bold;
-                background-color:$white;
+                background-color: $white;
                 z-index: 9;
             }
 
             h5 {
-                background-color:$third;
+                background-color: $third;
                 z-index: 9;
-                padding:0 $px-5;
+                padding: 0 $px-5;
             }
 
             &:after {
-                border-bottom:2px dotted;
-                content:"";
-                width:100%;
+                border-bottom: 2px dotted;
+                content: "";
+                width: 100%;
                 position: absolute;
-                bottom:11px;
+                bottom: 11px;
             }
         }
 
         .body {
-            margin-top:$px-20;
+            margin-top: $px-20;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -86,13 +99,14 @@
         &.--no-price {
             margin: $px-20 0;
             padding: $px-10;
+
             .header {
                 &:after {
-                    border-bottom:2px dotted;
-                    content:"";
-                    width:100%;
+                    border-bottom: 2px dotted;
+                    content: "";
+                    width: 100%;
                     position: absolute;
-                    bottom:3px;
+                    bottom: 3px;
                 }
             }
 
@@ -104,13 +118,16 @@
         }
     }
 
-     /* Tratamiento Vertical */
+    /* Tratamiento Vertical */
     &.--vertical {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
+
         .--description {
-            padding:$px-15;
+            padding: $px-15;
+            display: flex;
+            flex-direction: column;
         }
     }
 }
