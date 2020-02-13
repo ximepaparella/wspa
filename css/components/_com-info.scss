@@ -25,3 +25,13 @@
         font-weight: bold;
     }
 }
+
+@media screen and (max-width:650px) { 
+    .com-info {
+        order:1;
+
+        p {
+            padding-bottom:$px-15;
+        }
+    }
+}

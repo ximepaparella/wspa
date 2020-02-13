@@ -5,3 +5,9 @@
     align-items: center;
     padding:0 0 $px-50 0;
 }
+
+@media screen and (max-width:650px) {
+    .mod-slider-promo {
+        padding-bottom:0;
+    }
+}

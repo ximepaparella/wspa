@@ -130,4 +130,14 @@
             flex-direction: column;
         }
     }
+
+}
+
+@media screen and (max-width:650px) {
+    .mod-treatment {
+        flex-direction: column;
+        .--description {
+            padding: $px-20;
+        }
+    }
 }

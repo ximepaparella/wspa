@@ -50,3 +50,10 @@
         }
     }
 }
+
+@media screen and (max-width:650px) {
+    .com-grid-item {
+         margin:$px-10 0!important;
+
+    }
+}

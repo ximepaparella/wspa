@@ -5,3 +5,10 @@
     align-items: center;
     padding:$px-50 0;
 }
+
+
+@media screen and (max-width:650px) {
+    .mod-intro {
+        padding:0;
+    }
+}

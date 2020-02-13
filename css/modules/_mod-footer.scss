@@ -4,11 +4,30 @@
         flex-direction: row;
         padding: $px-15;
         font-size: $font-13;
-        
+
         &.--right {
             justify-content: flex-end;
             text-align: center;
         }
-    
+
+    }
+}
+
+@media screen and (max-width:650px) {
+    .mod-footer {
+        .lay {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        p {
+            line-height: $line-16;
+        }
+
+        div {
+            &.--right {
+                justify-content: center;
+            }
+        }
     }
 }
