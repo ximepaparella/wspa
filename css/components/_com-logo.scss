@@ -6,3 +6,13 @@
         }
     }
 }
+
+@media screen and (max-width:650px) {
+    .com-logo {
+        .icon-logo {
+            &:before {
+                color:$text;
+            }
+        }
+    }
+}

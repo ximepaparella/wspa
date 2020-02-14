@@ -1393,6 +1393,26 @@ a {
   color: #FFF;
 }
 
+@media screen and (max-width: 650px) {
+  .mod-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: white;
+    left: 0;
+    text-align: center;
+    top: 66px;
+    padding: 0.625em 0.3125em;
+  }
+  .mod-menu a {
+    color: #707070;
+    padding: 0.625em 0;
+  }
+}
+
 /** VARIABLES
 ===================================*/
 /** RESET AND LAYOUT
@@ -1706,6 +1726,15 @@ ul.bxslider {
 
 .mod-call-to-action.--appointment {
   background-image: url("http://estudioequis.com.ar/wspa/img/call-to-action/appointment.jpg");
+}
+
+@media screen and (max-width: 650px) {
+  .mod-call-to-action {
+    background-size: 420%;
+  }
+  .mod-call-to-action.--gift {
+    background-position: center right;
+  }
 }
 
 .mod-social {
@@ -2137,6 +2166,12 @@ ul.bxslider {
   color: #FFF;
 }
 
+@media screen and (max-width: 650px) {
+  .com-logo .icon-logo:before {
+    color: #707070;
+  }
+}
+
 .com-link {
   font-weight: bold;
 }
@@ -2170,6 +2205,12 @@ ul.bxslider {
 
 .com-whatsapp:hover .icon-w-outline {
   color: #FFF;
+}
+
+@media screen and (max-width: 650px) {
+  .com-whatsapp {
+    display: none;
+  }
 }
 
 .com-button {
@@ -2239,6 +2280,10 @@ ul.bxslider {
 @media screen and (max-width: 650px) {
   .com-actions .com-button {
     width: 100%;
+  }
+  .mod-call-to-action .com-button {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -2393,6 +2438,10 @@ ul.bxslider {
   }
   .mod-services .com-title {
     margin-bottom: 0;
+  }
+  .mod-call-to-action .com-title .page-title,
+  .mod-call-to-action .com-title .pre-title {
+    text-align: center;
   }
   .mod-circuits .com-title .page-title,
   .mod-circuits .com-title .pre-title {

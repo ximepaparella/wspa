@@ -15,4 +15,13 @@
     }
 }
 
+@media screen and (max-width:650px) {
+    .mod-call-to-action {
+        background-size: 420%;
+
+        &.--gift {
+            background-position: center right;
+        }
+    }
+}
 
