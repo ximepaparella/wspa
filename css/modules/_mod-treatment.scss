@@ -61,6 +61,7 @@
             h2 {
                 font-family: $font-titles;
                 font-size: $px-30;
+                line-height: $line-30;
                 font-weight: bold;
                 background-color: $white;
                 z-index: 9;
@@ -138,6 +139,33 @@
         flex-direction: column;
         .--description {
             padding: $px-20;
+        }
+
+        &.--simple {
+            padding:$px-20;
+            .header, 
+            .body {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header {
+                h2 {
+                    margin-bottom: $px-7;
+                    font-size: $font-27;
+                }
+                &:after {
+                    bottom:-4px;
+                }
+            }
+
+            .body {
+                p {
+                    max-width:100%;
+                    padding-right:0;
+                    margin: $px-10  0 $px-30 0;
+                }
+            }
         }
     }
 }

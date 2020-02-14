@@ -41,3 +41,28 @@
     }
 
 }
+
+@media screen and (max-width:650px) {
+    .mod-page-title {
+        height:250px;
+
+        &.--contacto,
+        &.--tratamientos,
+        &.--membresias,
+        &.--yoga,
+        &.--circuitos {
+            margin-top:0;
+            background-repeat: no-repeat;
+            background-size: 190%;
+        }
+
+        &.--tratamientos {
+            background-position: center left;
+        }
+        h1 {
+            font-size:$font-40;
+            padding: 0 20px;
+            text-align: center;
+        }
+    }
+}

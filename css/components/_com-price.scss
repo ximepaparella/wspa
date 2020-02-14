@@ -3,7 +3,8 @@
     flex-direction: column;
 
     &:last-of-type {
-        margin-bottom:$px-10;
+        margin-bottom: $px-10;
+
         &:after {
             display: none;
         }
@@ -17,12 +18,12 @@
     }
 
     h6 {
-        padding-bottom:$px-5;
+        padding-bottom: $px-5;
     }
 
     span {
         font-family: $font-titles;
-        font-size:$font-14;
+        font-size: $font-14;
     }
 
     /*Especificacion para modulos de un solo Precio */
@@ -33,26 +34,26 @@
         justify-content: space-evenly;
         align-items: center;
 
-        
-    h5 {
-display:block;
-margin-bottom: 10px;
-    }
+
+        h5 {
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 
-     /*Especificacion para modulos de un solo Precio */
-     .multiple-price & {
+    /*Especificacion para modulos de un solo Precio */
+    .multiple-price & {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width:100%;
+        width: 100%;
 
         &:after {
-            content:" ";
-            border-bottom:1px solid $secondary;
-            margin:$px-20 0;
-            width:10%;
+            content: " ";
+            border-bottom: 1px solid $secondary;
+            margin: $px-20 0;
+            width: 10%;
         }
     }
 
@@ -63,6 +64,15 @@ margin-bottom: 10px;
     }
 
     &.--double {
-        width:100%;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .com-price {
+        .one-price & {
+            width: 100%;
+        }
     }
 }

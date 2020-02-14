@@ -87,6 +87,7 @@
         letter-spacing: 3px;
         margin-bottom: $px-10;
         font-size: $font-15;
+        line-height: $line-15;
         font-family: $font-default;
         font-weight: normal;
 
@@ -151,8 +152,21 @@
 /* Mobile */
 @media screen and (max-width:650px) {
     .com-title {
+
+        /*Especificacion para modulos de Tratamientos Verticales*/
+        .--vertical & {
+            padding-bottom: 0;
+        }
+
         .mod-services & {
             margin-bottom: 0;
+        }
+
+        .mod-circuits & {
+            .page-title,
+            .pre-title {
+                text-align: center;
+            }
         }
 
         .mod-intro & {
@@ -161,10 +175,32 @@
             }
         }
 
+
+
         /* Page Title */
         .page-title {
             font-size: $font-35;
             line-height: $line-35;
+        }
+
+        .mod-policies & {
+            .page-title {
+                font-size: $font-35;
+                line-height: $line-35;
+                text-align: center;
+            }
+        }
+
+        .treatment-title {
+            margin: $px-5 0;
+            line-height: $line-35;
+        }
+
+        
+        .mod-policies & {
+            p {
+               text-align: center;
+            }
         }
     }
 }

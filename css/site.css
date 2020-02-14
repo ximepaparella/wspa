@@ -249,6 +249,19 @@ a {
   top: 0;
 }
 
+@media screen and (max-width: 650px) {
+  .hlp-border-left-before:before {
+    border-bottom: 1px solid #CBC9BE;
+    content: "";
+    position: absolute;
+    left: 12%;
+    width: 80%;
+    height: 1px;
+    top: -39px;
+    margin: auto;
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
@@ -1246,6 +1259,13 @@ a {
       grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 650px) {
+  .row-gap-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 48em) {
   .row-gap-tablet-4 {
     -ms-grid-columns: 1fr 1fr 1fr  1fr;
@@ -1837,6 +1857,7 @@ ul.bxslider {
 .mod-treatment.--simple .header h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.875em;
+  line-height: 2.3125rem;
   font-weight: bold;
   background-color: #FFF;
   z-index: 9;
@@ -1929,6 +1950,29 @@ ul.bxslider {
   .mod-treatment .--description {
     padding: 1.25em;
   }
+  .mod-treatment.--simple {
+    padding: 1.25em;
+  }
+  .mod-treatment.--simple .header,
+  .mod-treatment.--simple .body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .mod-treatment.--simple .header h2 {
+    margin-bottom: 0.4375em;
+    font-size: 1.6875rem;
+  }
+  .mod-treatment.--simple .header:after {
+    bottom: -4px;
+  }
+  .mod-treatment.--simple .body p {
+    max-width: 100%;
+    padding-right: 0;
+    margin: 0.625em 0 1.875em 0;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -1988,6 +2032,25 @@ ul.bxslider {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 650px) {
+  .mod-page-title {
+    height: 250px;
+  }
+  .mod-page-title.--contacto, .mod-page-title.--tratamientos, .mod-page-title.--membresias, .mod-page-title.--yoga, .mod-page-title.--circuitos {
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: 190%;
+  }
+  .mod-page-title.--tratamientos {
+    background-position: center left;
+  }
+  .mod-page-title h1 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
 .mod-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2006,6 +2069,12 @@ ul.bxslider {
 
 .mod-list:first-of-type {
   padding: 3.125em 0 0.625em 0;
+}
+
+@media screen and (max-width: 650px) {
+  .mod-list:first-of-type {
+    padding: 0.625em 0 0.625em 0;
+  }
 }
 
 .mod-grid .lay .col-6 {
@@ -2167,6 +2236,12 @@ ul.bxslider {
   margin: 0.9375em 0 0 0;
 }
 
+@media screen and (max-width: 650px) {
+  .com-actions .com-button {
+    width: 100%;
+  }
+}
+
 .com-title {
   text-align: center;
   margin: 1.25em 0;
@@ -2250,6 +2325,7 @@ ul.bxslider {
   letter-spacing: 3px;
   margin-bottom: 0.625em;
   font-size: 0.9375rem;
+  line-height: 1.375rem;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   /*Especificacion para modulos de Tratamientos*/
@@ -2309,10 +2385,18 @@ ul.bxslider {
 /* Mobile */
 @media screen and (max-width: 650px) {
   .com-title {
+    /*Especificacion para modulos de Tratamientos Verticales*/
     /* Page Title */
+  }
+  .--vertical .com-title {
+    padding-bottom: 0;
   }
   .mod-services .com-title {
     margin-bottom: 0;
+  }
+  .mod-circuits .com-title .page-title,
+  .mod-circuits .com-title .pre-title {
+    text-align: center;
   }
   .mod-intro .com-title p {
     max-width: 100%;
@@ -2320,6 +2404,18 @@ ul.bxslider {
   .com-title .page-title {
     font-size: 2.1875rem;
     line-height: 2.625rem;
+  }
+  .mod-policies .com-title .page-title {
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+    text-align: center;
+  }
+  .com-title .treatment-title {
+    margin: 0.3125em 0;
+    line-height: 2.625rem;
+  }
+  .mod-policies .com-title p {
+    text-align: center;
   }
 }
 
@@ -2442,6 +2538,16 @@ ul.bxslider {
   min-height: 280px;
 }
 
+@media screen and (max-width: 650px) {
+  .com-list {
+    margin: 0.625em 0;
+  }
+  .com-list .first-level {
+    line-height: 1.5625rem;
+    margin: 0.3125em 0;
+  }
+}
+
 .com-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2539,6 +2645,12 @@ ul.bxslider {
 }
 
 @media screen and (max-width: 650px) {
+  .one-price .com-price {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .com-map {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -2608,12 +2720,31 @@ ul.bxslider {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 650px) {
+  .com-actions {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .com-text {
   margin-right: 2.5em;
 }
 
 .com-text a {
   font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .com-text {
+    margin-right: 0;
+    text-align: center;
+  }
 }
 
 .com-input {

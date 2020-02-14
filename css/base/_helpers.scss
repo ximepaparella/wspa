@@ -82,3 +82,18 @@
 
     }
 }
+
+@media screen and (max-width:650px) {
+    .hlp-border-left-before {
+        &:before {
+            border-bottom: 1px solid #CBC9BE;
+            content: "";
+            position: absolute;
+            left: 12%;
+            width: 80%;
+            height: 1px;
+            top: -39px;
+            margin: auto;
+        }
+    }
+}

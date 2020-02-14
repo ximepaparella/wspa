@@ -5,3 +5,10 @@
         font-weight: 600;
     }
 }
+
+@media screen and (max-width:650px) {
+    .com-text {
+        margin-right:0;
+        text-align: center;
+    }
+}

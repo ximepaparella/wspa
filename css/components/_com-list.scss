@@ -17,3 +17,14 @@
         min-height: 280px;
     }
 }
+
+@media screen and (max-width:650px) {
+    .com-list {
+        margin:$px-10 0;
+
+        .first-level {
+            line-height: $line-18;
+            margin:$px-5 0
+        }
+    }
+}

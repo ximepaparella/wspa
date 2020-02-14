@@ -8,3 +8,12 @@
         padding:$px-50  0 $px-10 0; 
     }
 }
+
+
+@media screen and (max-width:650px) {
+    .mod-list {
+        &:first-of-type {
+            padding:$px-10  0 $px-10 0; 
+        }
+    }
+}
