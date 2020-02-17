@@ -1,9 +1,16 @@
-#menu-mobile {
-    display: inline-block;
-    font-size: 35px;
-    right: 20px;
-    position: absolute;
-    top: 16px;
-    z-index: 99;
-    color: $black;
-} 
+#menu-mobile { 
+    display:none
+}
+
+@media screen and (max-width:650px) {
+
+    #menu-mobile {
+        display: inline-block;
+        font-size: 35px;
+        right: 20px;
+        position: absolute;
+        top: 16px;
+        z-index: 99;
+        color: $black;
+    }
+}

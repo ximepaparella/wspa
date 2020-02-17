@@ -264,8 +264,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
-  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("../../fonts/icomoon.eot?d141zw");
+  src: url("../../fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?d141zw") format("truetype"), url("../../fonts/icomoon.woff?d141zw") format("woff"), url("../../fonts/icomoon.svg?d141zw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1386,6 +1386,12 @@ a {
   }
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-header .lay {
+    padding: 0.625em;
+  }
+}
+
 .mod-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,6 +1427,13 @@ a {
   .mod-menu a {
     color: #707070;
     padding: 0.625em 0;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-menu a {
+    font-size: 0.875rem;
+    padding: 0 0.4375em;
   }
 }
 
@@ -1658,6 +1671,21 @@ ul.bxslider {
   }
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .bx-wrapper {
+    margin-top: -50px;
+  }
+  .--text {
+    top: calc(100% - 73%);
+    left: calc(100% - 88%);
+    width: 80%;
+    padding: 0.625em;
+  }
+  .--text h2 {
+    margin-bottom: 0.3125em;
+  }
+}
+
 .mod-intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1675,7 +1703,7 @@ ul.bxslider {
   padding: 3.125em 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   .mod-intro {
     padding: 0;
   }
@@ -1698,7 +1726,7 @@ ul.bxslider {
   padding: 3.125em 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   .mod-services {
     padding: 0;
   }
@@ -1721,7 +1749,7 @@ ul.bxslider {
   padding: 0 0 3.125em 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   .mod-slider-promo {
     padding-bottom: 0;
   }
@@ -1753,6 +1781,20 @@ ul.bxslider {
     background-size: 420%;
   }
   .mod-call-to-action.--gift {
+    background-position: center right;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-call-to-action {
+    background-size: 420%;
+  }
+  .mod-call-to-action.--gift {
+    background-position: 64% 40%;
+    background-size: 210%;
+  }
+  .mod-call-to-action.--appointment {
+    background-size: 150%;
     background-position: center right;
   }
 }
@@ -2024,6 +2066,12 @@ ul.bxslider {
   }
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-treatment.--simple .header h2 {
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .row.mod-img-grid {
     margin-top: 0;
@@ -2047,6 +2095,7 @@ ul.bxslider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-repeat: no-repeat;
 }
 
 .mod-page-title.--tratamientos {
@@ -2100,6 +2149,18 @@ ul.bxslider {
   }
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .mod-page-title {
+    height: 300px;
+  }
+  .mod-page-title h1 {
+    font-size: 2.5rem;
+  }
+  .mod-page-title.--tratamientos {
+    background-size: 110%;
+  }
+}
+
 .mod-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2120,7 +2181,7 @@ ul.bxslider {
   padding: 3.125em 0 0.625em 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   .mod-list:first-of-type {
     padding: 0.625em 0 0.625em 0;
   }
@@ -2193,13 +2254,19 @@ ul.bxslider {
 }
 
 #menu-mobile {
-  display: inline-block;
-  font-size: 35px;
-  right: 20px;
-  position: absolute;
-  top: 16px;
-  z-index: 99;
-  color: #000;
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  #menu-mobile {
+    display: inline-block;
+    font-size: 35px;
+    right: 20px;
+    position: absolute;
+    top: 16px;
+    z-index: 99;
+    color: #000;
+  }
 }
 
 .com-link {
@@ -2237,7 +2304,7 @@ ul.bxslider {
   color: #FFF;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   .com-whatsapp {
     display: none;
   }
@@ -2498,6 +2565,23 @@ ul.bxslider {
   }
 }
 
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .com-title {
+    /*Especificacion para modulos de Call To Action*/
+  }
+  .mod-call-to-action .com-title .page-title {
+    font-size: 1.875rem;
+    line-height: 2.3125rem;
+  }
+  .mod-treatment .com-title .treatment-title {
+    font-size: 1.875rem;
+    margin: 0.3125em 0;
+  }
+  .mod-treatment .com-title .pre-title {
+    font-size: 0.875rem;
+  }
+}
+
 .com-grid-item {
   position: relative;
 }
@@ -2624,6 +2708,20 @@ ul.bxslider {
   .com-list .first-level {
     line-height: 1.5625rem;
     margin: 0.3125em 0;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1023px) {
+  .com-list {
+    margin: 0.625em 0;
+  }
+  .com-list .first-level {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+  .com-list .sub-level {
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
   }
 }
 

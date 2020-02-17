@@ -28,3 +28,18 @@
         }
     }
 }
+
+@media screen and (min-width:651px) and (max-width:1023px){
+    .com-list {
+        margin:$px-10 0;
+
+        .first-level {
+            font-size: $font-16;
+            line-height: $line-18;
+        }
+        .sub-level {
+            font-size:$font-13;
+            line-height: $line-15;
+        }
+    }
+}

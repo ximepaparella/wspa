@@ -230,3 +230,19 @@ ul.bxslider {
     display: none;
   }
 }
+
+@media screen and (min-width:651px) and (max-width:1023px){
+  .bx-wrapper {
+    margin-top: -50px;
+  }
+  .--text {
+    top: calc(100% - 73%);
+    left: calc(100% - 88%);
+    width: 80%;
+    padding: $px-10;
+
+    h2 {
+      margin-bottom:$px-5;
+    }
+  }
+}

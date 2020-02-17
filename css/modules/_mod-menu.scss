@@ -29,3 +29,12 @@
         
     }
 }
+
+@media screen and (min-width:651px) and (max-width:1023px){
+    .mod-menu { 
+        a {
+            font-size: $font-14;
+             padding:0 $px-7;
+        }
+    }
+}

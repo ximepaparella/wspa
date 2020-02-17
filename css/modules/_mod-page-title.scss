@@ -6,9 +6,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
 
     &.--tratamientos {
         background-image: url(http://estudioequis.com.ar/wspa/img/bg-tratamientos-2.jpg);
+        
         
     }
 
@@ -63,6 +65,19 @@
             font-size:$font-40;
             padding: 0 20px;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1023px){
+    .mod-page-title {
+        height:300px;
+        h1 {
+            font-size: $font-40;
+        }
+
+        &.--tratamientos {
+            background-size:110%;
         }
     }
 }

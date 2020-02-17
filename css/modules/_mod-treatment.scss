@@ -137,13 +137,15 @@
 @media screen and (max-width:650px) {
     .mod-treatment {
         flex-direction: column;
+
         .--description {
             padding: $px-20;
         }
 
         &.--simple {
-            padding:$px-20;
-            .header, 
+            padding: $px-20;
+
+            .header,
             .body {
                 flex-direction: column;
                 text-align: center;
@@ -154,16 +156,29 @@
                     margin-bottom: $px-7;
                     font-size: $font-27;
                 }
+
                 &:after {
-                    bottom:-4px;
+                    bottom: -4px;
                 }
             }
 
             .body {
                 p {
-                    max-width:100%;
-                    padding-right:0;
-                    margin: $px-10  0 $px-30 0;
+                    max-width: 100%;
+                    padding-right: 0;
+                    margin: $px-10 0 $px-30 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1023px) {
+    .mod-treatment {
+        &.--simple {
+            .header {
+                h2 {
+                    font-size: $font-20;
                 }
             }
         }

@@ -25,3 +25,20 @@
     }
 }
 
+
+
+@media screen and (min-width:651px) and (max-width:1023px){
+    .mod-call-to-action {
+        background-size: 420%;
+
+        &.--gift {
+            background-position: 64% 40%;
+            background-size: 210%;      
+        }
+        
+        &.--appointment {
+            background-size:150%;
+            background-position: center right;
+        }
+    }
+}
