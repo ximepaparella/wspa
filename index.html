@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="mod-header">
         <div class="lay">
@@ -31,6 +30,10 @@
                 <i class="icon-logo"> </i>
             </a>
             <!-- /LOGO -->
+
+            <!-- MENU -->
+            <a id="menu-mobile" class="closed"><i class="icon-menu"></i></a>
+            <!-- /MENU -->
 
             <!-- MENU -->
             <nav class="mod-menu">
@@ -67,7 +70,11 @@
     <div class="bxslider">
         <!-- SLIDE 1 -->
         <div>
-            <img src="img/slides/slide-1.jpg">
+            <picture>
+                <source srcset="img/slides/slide-mobile-1.jpg" media="(max-width: 600px)"/>
+                <img src="img/slides/slide-1.jpg" alt="example"/>
+              </picture>
+
             <div class="--text">
                 <h2>DÍA DE SPA EXIMIA</h2>
                 <p>Te invitamos a disfrutar de una propuesta única pensada
@@ -81,7 +88,10 @@
 
         <!-- SLIDE 2 -->
         <div>
-            <img src="img/slides/slide-2.jpg">
+            <picture>
+                <source srcset="img/slides/slide-mobile-2.jpg" media="(max-width: 600px)"/>
+                <img src="img/slides/slide-2.jpg" alt="example"/>
+              </picture>
             <div class="--text">
                 <h2>FLORES DEL DELTA</h2>
                 <p>Te invitamos a disfrutar de una propuesta única pensada
