@@ -264,8 +264,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?d141zw");
-  src: url("../../fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?d141zw") format("truetype"), url("../../fonts/icomoon.woff?d141zw") format("woff"), url("../../fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
+  src: url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1423,6 +1423,11 @@ a {
     text-align: center;
     top: 66px;
     padding: 0.625em 0.3125em;
+  }
+  .mod-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .mod-menu a {
     color: #707070;

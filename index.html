@@ -32,8 +32,10 @@
             <!-- /LOGO -->
 
             <!-- MENU -->
-            <a id="menu-mobile" class="closed"><i class="icon-menu"></i></a>
+            <a id="menu-mobile"><i class="icon-menu"></i></a>
             <!-- /MENU -->
+
+           
 
             <!-- MENU -->
             <nav class="mod-menu">
@@ -46,6 +48,21 @@
                 <a href="contacto.html">Contacto</a>
             </nav>
             <!-- /MENU -->
+
+            <script>
+                var el = document.querySelector('.icon-menu');
+                var menu = document.querySelector('.mod-menu');
+
+                el.onclick = function () {
+                    if (menu.classList.contains("open")) {
+
+                        menu.classList.remove('open')
+
+                    } else {
+                        menu.classList.add('open')
+                    }
+                }
+            </script>
 
             <!--WTS -->
             <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
@@ -71,9 +88,9 @@
         <!-- SLIDE 1 -->
         <div>
             <picture>
-                <source srcset="img/slides/slide-mobile-1.jpg" media="(max-width: 600px)"/>
-                <img src="img/slides/slide-1.jpg" alt="example"/>
-              </picture>
+                <source srcset="img/slides/slide-mobile-1.jpg" media="(max-width: 600px)" />
+                <img src="img/slides/slide-1.jpg" alt="example" />
+            </picture>
 
             <div class="--text">
                 <h2>DÍA DE SPA EXIMIA</h2>
@@ -89,9 +106,9 @@
         <!-- SLIDE 2 -->
         <div>
             <picture>
-                <source srcset="img/slides/slide-mobile-2.jpg" media="(max-width: 600px)"/>
-                <img src="img/slides/slide-2.jpg" alt="example"/>
-              </picture>
+                <source srcset="img/slides/slide-mobile-2.jpg" media="(max-width: 600px)" />
+                <img src="img/slides/slide-2.jpg" alt="example" />
+            </picture>
             <div class="--text">
                 <h2>FLORES DEL DELTA</h2>
                 <p>Te invitamos a disfrutar de una propuesta única pensada
@@ -113,9 +130,12 @@
                 <h3 class="pre-title">BIENVENIDOS A</h3>
                 <H1 class="page-title">WHYNDHAM SPA</H1>
 
-                <p>W Spa te brinda la posibilidad de complementar tu viaje de placer o negocios con una serie de tratamientos pensados para encontrar el equilibrio perfecto entre descanso y salud. <br />
+                <p>W Spa te brinda la posibilidad de complementar tu viaje de placer o negocios con una serie de
+                    tratamientos pensados para encontrar el equilibrio perfecto entre descanso y salud. <br />
 
-                    Wyndham Nordelta es un hotel 5 estrellas ubicado en la Bahía Grande de Nordelta, Tigre, Buenos Aires. Cuenta con 141 habitaciones, spa con circuito de aguas, piscina descubierta, restaurant con cocina de autor y salones para eventos y reuniones.</p>
+                    Wyndham Nordelta es un hotel 5 estrellas ubicado en la Bahía Grande de Nordelta, Tigre, Buenos
+                    Aires. Cuenta con 141 habitaciones, spa con circuito de aguas, piscina descubierta, restaurant con
+                    cocina de autor y salones para eventos y reuniones.</p>
             </div>
             <!-- /TITLE -->
 
@@ -264,14 +284,15 @@
                     <div class="com-detail">
                         <ul class="com-list">
                             <li class="first-level"><i class="icon-check"></i> Masaje Descontracturante de 50’</li>
-                            <li class="first-level"><i class="icon-check"></i>  Circuito de Aguas 120’:</li>
+                            <li class="first-level"><i class="icon-check"></i> Circuito de Aguas 120’:</li>
                             <li class="sub-level">• Piscina in/out climatizada con cascadas cervicales
                                 e hidromasaje integrado </li>
                             <li class="sub-level">• Sala de relax con tumbonas térmicas</li>
                             <li class="sub-level">• Sala de hidratación</li>
                             <li class="sub-level">• Terraza con solárium y reposeras con vista a la Bahía Grande
                             </li>
-                            <li class="first-level"><i class="icon-check"></i>  Té en hebras y pastelería del día en Santal Café.</li>
+                            <li class="first-level"><i class="icon-check"></i> Té en hebras y pastelería del día en
+                                Santal Café.</li>
                         </ul>
                     </div>
                     <div class="com-price">
@@ -312,7 +333,7 @@
             <div class="col-12 col-tablet-6 com-info hlp-bg-third">
                 <p>
                     <strong>Horarios</strong>
-                    <span>Lunes y Martes: Cerrado<br/> Miercoles a Domingos desde las 10 hrs a las 20 hrs.<br/> 
+                    <span>Lunes y Martes: Cerrado<br /> Miercoles a Domingos desde las 10 hrs a las 20 hrs.<br />
                         Sábados de 10 a 21 hrs.</span>
                 </p>
                 <p>
@@ -363,7 +384,7 @@
     <div id="com-floating-button" class="com-floating-button">
         <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
             target="_blank" id="whatsapp">
-           <img src="img/wts-contacto.png">
+            <img src="img/wts-contacto.png">
     </div>
     <!-- /Modulo Whatsapp -->
 </body>

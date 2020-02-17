@@ -30,6 +30,10 @@
                 <i class="icon-logo"> </i>
             </a>
             <!-- /LOGO -->
+           
+            <!-- MENU -->
+            <a id="menu-mobile"><i class="icon-menu"></i></a>
+            <!-- /MENU -->            
 
             <!-- MENU -->
             <nav class="mod-menu">
@@ -42,6 +46,21 @@
                 <a href="contacto.html">Contacto</a>
             </nav>
             <!-- /MENU -->
+
+            <script>
+                var el = document.querySelector('.icon-menu');
+                var menu = document.querySelector('.mod-menu');
+
+                el.onclick = function () {
+                    if (menu.classList.contains("open")) {
+
+                        menu.classList.remove('open')
+
+                    } else {
+                        menu.classList.add('open')
+                    }
+                }
+            </script>
 
             <!--WTS -->
             <a href="https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
