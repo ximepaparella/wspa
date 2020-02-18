@@ -264,8 +264,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw");
-  src: url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.eot?d141zw#iefix") format("embedded-opentype"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.ttf?d141zw") format("truetype"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.woff?d141zw") format("woff"), url("http://www.estudioequis.com.ar/wspa/fonts/icomoon.svg?d141zw#icomoon") format("svg");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot");
+  src: url("http://estudioequis.com.ar/wspa/fonts/icomoon.eot") format("embedded-opentype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.ttf") format("truetype"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.woff") format("woff"), url("http://estudioequis.com.ar/wspa/fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
