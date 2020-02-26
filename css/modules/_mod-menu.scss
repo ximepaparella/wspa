@@ -1,14 +1,31 @@
 .mod-menu {
-    display:flex;
+    display: flex;
     flex-direction: row;
 
     a {
         text-transform: uppercase;
         padding: 0 $px-10;
         font-weight: normal;
-        color:$white;
+        color: $white;
+
+        &.active {
+            font-weight: 600;
+            position: relative;
+
+            &:before {
+                content: " ";
+                border-bottom: 1px solid #fff;
+                width: 38%;
+                margin: auto;
+                height: 1px;
+                text-align: center;
+                position: absolute;
+                bottom: -6px;
+                left: 30%;
+            }
+        }
     }
-    
+
 }
 
 @media screen and (max-width:650px) {
@@ -16,6 +33,7 @@
         &.open {
             display: flex;
         }
+
         display: none;
         flex-direction: column;
         position: absolute;
@@ -25,19 +43,24 @@
         text-align: center;
         top:66px;
         padding: $px-10 $px-5;
+
         a {
-            color:$text;
-            padding:$px-10 0;
+            color: $text;
+            padding: $px-10 0;
+
+            &:before {
+                display:none;
+            }
         }
-        
+
     }
 }
 
-@media screen and (min-width:651px) and (max-width:1023px){
-    .mod-menu { 
+@media screen and (min-width:651px) and (max-width:1023px) {
+    .mod-menu {
         a {
             font-size: $font-14;
-             padding:0 $px-7;
+            padding: 0 $px-7;
         }
     }
 }

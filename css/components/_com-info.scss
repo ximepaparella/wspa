@@ -6,7 +6,14 @@
     text-align: center;
     justify-content: space-evenly; 
 
-    strong,
+    strong {
+        display:inline-block;
+    } 
+
+    [class^="icon-"], [class*=" icon-"] { 
+        margin-right:$px-5; 
+    }
+    
     a,
     span {
         font-family: $font-titles!important;
