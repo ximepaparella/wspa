@@ -2077,6 +2077,7 @@ ul.bxslider {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .mod-treatment.--vertical .--description {
@@ -2088,6 +2089,10 @@ ul.bxslider {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.mod-treatment.one-price .row {
+  position: relative;
 }
 
 @media screen and (max-width: 650px) {
@@ -2911,6 +2916,28 @@ ul.bxslider {
   .one-price .com-price {
     width: 100%;
   }
+}
+
+.com-badge {
+  text-align: center;
+  padding: 0.625em 0.625em 0.9375em 0.625em;
+  position: absolute;
+  width: 70%;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  top: 0.625em;
+}
+
+.com-badge strong {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.one-price .com-badge {
+  bottom: 0.625em;
+  width: 60%;
+  top: initial;
 }
 
 @media screen and (max-width: 650px) {

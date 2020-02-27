@@ -124,12 +124,18 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
 
         .--description {
             padding: $px-15;
             display: flex;
             flex-direction: column;
         }
+    }
+
+    &.one-price {
+        .row { position: relative;}
+       
     }
 
 }
