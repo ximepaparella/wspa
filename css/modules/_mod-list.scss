@@ -7,6 +7,11 @@
     &:first-of-type {
         padding:$px-50  0 $px-10 0; 
     }
+
+    .content {
+        position: relative;
+        min-height: 130px;
+    }
 }
 
 
