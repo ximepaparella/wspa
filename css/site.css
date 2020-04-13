@@ -2263,6 +2263,11 @@ ul.bxslider {
   margin-right: 0.9375em;
 }
 
+.mod-grid .content {
+  position: relative;
+  min-height: 130px;
+}
+
 .mod-circuits {
   width: 100%;
   -webkit-box-align: center;
