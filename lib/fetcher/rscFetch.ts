@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { CACHE_TAGS } from '../revalidation/cache-tags';
 import type {
   HomePageData,
   TreatmentsPageData,
@@ -7,16 +8,6 @@ import type {
   ContactPageData,
   TermsPageData,
 } from '../types/data';
-
-// Cache tags for revalidation - ready for phase-2 API
-export const CACHE_TAGS = {
-  HOME: 'home',
-  TREATMENTS: 'tratamientos',
-  CIRCUITS: 'circuitos',
-  MEMBERSHIPS: 'membresias',
-  CONTACT: 'contacto',
-  TERMS: 'terminos',
-} as const;
 
 // Environment configuration
 const IS_DEV = process.env.NODE_ENV === 'development';
@@ -40,7 +31,7 @@ async function fetchStaticData<T>(filename: string): Promise<T> {
     if (IS_DEV) {
       console.error(`Failed to load static data: ${filename}`, error);
     }
-    throw error;
+    throw new Error(`Failed to load data for ${filename}`);
   }
 }
 
