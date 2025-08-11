@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# W Spa - Next.js 15 Migration
 
-## Getting Started
+Modern spa website built with Next.js 15, TypeScript, and Server Components, migrated from static HTML/CSS.
 
-First, run the development server:
+## 🚀 Quick Start
+
+**Prerequisites**: Node.js 20+ and pnpm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Switch to Node 20
+nvm use 20
+
+# Install dependencies
+pnpm install
+
+# Start development server
 pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Development
+pnpm dev              # Start dev server
+pnpm build            # Production build
+pnpm start            # Start production server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Quality & Performance
+pnpm lint             # Run ESLint
+pnpm lint:fix         # Fix ESLint issues
+pnpm format           # Format with Prettier
+pnpm format:check     # Check formatting
+pnpm type-check       # TypeScript validation
 
-## Learn More
+# Performance Monitoring
+pnpm perf:check       # Check performance budgets
+pnpm analyze          # Bundle size analysis
+pnpm lhci             # Full Lighthouse audit
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 15** with App Router
+- **TypeScript** (strict mode)
+- **Server Components** by default
+- **CSS Modules + Sass** for styling
+- **Self-hosted fonts** (Open Sans, Playfair Display)
 
-## Deploy on Vercel
+### Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/              # Next.js App Router
+├── styles/           # Global styles & design tokens
+└── components/       # Reusable components (coming in E4)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+public/
+├── fonts/            # Self-hosted font files
+└── ...               # Static assets
+
+docs/                 # Documentation
+scripts/              # Build & performance scripts
+```
+
+## 🎯 Performance Budgets
+
+Following cursor rules for Core Web Vitals "green" targets:
+
+- **LCP**: ≤ 2.5s
+- **INP**: ≤ 200ms
+- **CLS**: ≤ 0.1
+- **Client JS**: ≤ 120KB gzipped per page
+
+See [Performance Budgets](./docs/performance-budgets.md) for details.
+
+## 🔧 Development Workflow
+
+### Code Quality
+
+- **ESLint** + **Prettier** configured
+- **Husky** pre-commit hooks
+- **TypeScript strict** mode
+- **RSC-first** development (see [cursor rules](./cursorrules.md))
+
+### Performance Monitoring
+
+- **Lighthouse CI** for automated audits
+- **Bundle analyzer** for size tracking
+- **GitHub Actions** CI with quality gates
+
+### Git Workflow
+
+```bash
+# Feature development
+git checkout -b feature/your-feature
+# ... make changes ...
+pnpm lint && pnpm type-check
+git add . && git commit -m "feat: your change"
+git push origin feature/your-feature
+# Open PR - CI will run automatically
+```
+
+## 📊 Migration Progress
+
+- [x] **Epic E1 - Project Bootstrap** (T1.1-T1.3)
+  - ✅ Next.js 15 foundation
+  - ✅ Global CSS reset & fonts
+  - ✅ Performance budgets & CI
+- [ ] **Epic E2 - URL Parity & Routing**
+- [ ] **Epic E3 - Data Layer**
+- [ ] **Epic E4 - UI System & Styling**
+- [ ] **Epic E5 - Client Islands**
+- [ ] **Epic E6 - Page Implementations**
+- [ ] **Epic E7 - Analytics & Tags**
+- [ ] **Epic E8 - Performance & A11y**
+- [ ] **Epic E9 - Documentation**
+
+## 🌐 Original Site
+
+The original HTML/CSS spa website is preserved in `_backup-original-site/` for reference during migration.
+
+## 📋 Notes
+
+- **Fonts**: Download required font files using instructions in `public/fonts/README.md`
+- **Environment**: Copy `.env.local.example` to `.env.local` for local development
+- **Performance**: Run `pnpm perf:check` before pushing changes
+
+---
+
+Built with ❤️ for W Spa - Whyndham Nordelta

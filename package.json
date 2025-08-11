@@ -11,6 +11,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "type-check": "tsc --noEmit",
+    "analyze": "ANALYZE=true pnpm build",
+    "lhci:build": "pnpm build",
+    "lhci:collect": "lhci collect",
+    "lhci:assert": "lhci assert",
+    "lhci": "pnpm lhci:build && pnpm lhci:collect && pnpm lhci:assert",
+    "perf:check": "node scripts/performance-check.js",
     "prepare": "husky"
   },
   "dependencies": {
@@ -20,6 +26,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@lhci/cli": "^0.15.1",
+    "@next/bundle-analyzer": "^15.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
