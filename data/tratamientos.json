@@ -1,0 +1,110 @@
+{
+  "pageTitle": {
+    "title": "Tratamientos",
+    "backgroundImage": "/img/bg-tratamientos-2.jpg"
+  },
+  "sections": [
+    {
+      "id": "tratamientos-faciales",
+      "preTitle": "EXIMIA",
+      "title": "TRATAMIENTOS FACIALES",
+      "treatments": [
+        {
+          "id": 1,
+          "name": "Limpieza Facial Profunda",
+          "description": "Tratamiento facial completo que incluye limpieza, exfoliación, extracción de impurezas y mascarilla nutritiva. Ideal para todo tipo de piel.",
+          "price": 8500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 2,
+          "name": "Hidratación Facial Intensiva",
+          "description": "Tratamiento hidratante con ácido hialurónico y vitamina E. Restaura la luminosidad natural de la piel y combate los signos del envejecimiento.",
+          "price": 9500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 3,
+          "name": "Anti-Age Facial",
+          "description": "Tratamiento rejuvenecedor con tecnología de vanguardia que estimula la producción de colágeno y reduce las líneas de expresión.",
+          "price": 12000,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        }
+      ]
+    },
+    {
+      "id": "tratamientos-corporales",
+      "preTitle": "PURA RELAJACIÓN CORPORAL",
+      "title": "TRATAMIENTOS CORPORALES",
+      "treatments": [
+        {
+          "id": 4,
+          "name": "Masaje Relajante",
+          "description": "Masaje corporal completo con aceites esenciales que libera tensiones y proporciona una profunda relajación muscular.",
+          "price": 10500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 5,
+          "name": "Exfoliación Corporal",
+          "description": "Tratamiento exfoliante con sales del mar muerto que renueva la piel eliminando células muertas y mejorando la textura.",
+          "price": 8000,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 6,
+          "name": "Envolturas Detox",
+          "description": "Tratamiento corporal detoxificante con algas marinas que purifica la piel y estimula la circulación linfática.",
+          "price": 11500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        }
+      ]
+    },
+    {
+      "id": "tratamientos-premium",
+      "preTitle": "GERMAINE DE CAPUCCINI",
+      "title": "TRATAMIENTOS PREMIUM",
+      "treatments": [
+        {
+          "id": 7,
+          "name": "The Cure Sheer Eye",
+          "description": "Tratamiento exclusivo de contorno de ojos con tecnología Cure Sheer que reduce bolsas, ojeras y líneas de expresión.",
+          "price": 15000,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 8,
+          "name": "Golden Caviare",
+          "description": "Tratamiento facial de lujo con caviar dorado que proporciona nutrición intensiva y efecto lifting inmediato.",
+          "price": 18500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        },
+        {
+          "id": 9,
+          "name": "Oxygen Detox",
+          "description": "Tratamiento oxigenante que purifica y revitaliza la piel mediante microburbujas de oxígeno y extractos botánicos.",
+          "price": 16500,
+          "bookingLink": "https://www.bepretty.com.ar/centros/112/",
+          "giftLink": "https://www.bepretty.com.ar/centros/112/"
+        }
+      ]
+    }
+  ],
+  "callToAction": {
+    "preTitle": "EN 3 SIMPLES PASOS",
+    "title": "SELECCIONÁ TU TRATAMIENTO Y SOLICITÁ TU TURNO ONLINE",
+    "cta": {
+      "text": "SOLICITAR TURNO",
+      "href": "https://www.bepretty.com.ar/centros/112/"
+    },
+    "backgroundImage": "/img/call-to-action/appointment.jpg"
+  }
+}
