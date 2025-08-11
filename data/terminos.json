@@ -1,0 +1,53 @@
+{
+  "pageTitle": {
+    "title": "Términos y Condiciones",
+    "backgroundImage": "/img/bg-tratamientos.jpg"
+  },
+  "sections": [
+    {
+      "title": "Términos y Condiciones del Servicio",
+      "content": [
+        {
+          "subtitle": "1. Aceptación de los términos",
+          "text": "Al utilizar los servicios de W Spa, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguno de estos términos, no debe utilizar nuestros servicios."
+        },
+        {
+          "subtitle": "2. Reservas y Cancelaciones",
+          "text": "Las reservas deben realizarse con un mínimo de 48 horas de anticipación. Las cancelaciones deben notificarse con al menos 24 horas de antelación para evitar cargos. Cancelaciones tardías tendrán un cargo del 50% del valor del tratamiento."
+        },
+        {
+          "subtitle": "3. Política de Llegada",
+          "text": "Se requiere llegar 15 minutos antes de la cita programada. Los retrasos pueden resultar en la reducción del tiempo del tratamiento sin reducción del precio."
+        },
+        {
+          "subtitle": "4. Restricciones de Edad",
+          "text": "El acceso al spa está restringido a personas mayores de 18 años. No se permite el ingreso a menores de edad en ninguna de nuestras instalaciones."
+        },
+        {
+          "subtitle": "5. Condiciones Médicas",
+          "text": "Los clientes deben informar sobre cualquier condición médica, lesión, embarazo, cirugía reciente o medicación que pueda afectar su capacidad para recibir tratamientos de spa."
+        },
+        {
+          "subtitle": "6. Responsabilidad",
+          "text": "W Spa no se hace responsable por objetos perdidos, dañados o robados. Se recomienda no traer objetos de valor al spa."
+        },
+        {
+          "subtitle": "7. Políticas de Comportamiento",
+          "text": "Está prohibido fumar en todas nuestras instalaciones. Se espera que todos los huéspedes mantengan un ambiente tranquilo y respetuoso."
+        },
+        {
+          "subtitle": "8. Precios y Pagos",
+          "text": "Los precios están sujetos a cambios sin previo aviso. El pago debe realizarse al momento del servicio o según las condiciones específicas del paquete adquirido."
+        },
+        {
+          "subtitle": "9. Gift Cards y Vouchers",
+          "text": "Los gift cards tienen una validez de 12 meses desde la fecha de compra. No son reembolsables y no pueden canjearse por dinero en efectivo."
+        },
+        {
+          "subtitle": "10. Modificaciones de los Términos",
+          "text": "W Spa se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones serán efectivas inmediatamente después de su publicación."
+        }
+      ]
+    }
+  ]
+}

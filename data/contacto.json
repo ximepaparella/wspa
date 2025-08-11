@@ -1,0 +1,64 @@
+{
+  "pageTitle": {
+    "title": "Contacto",
+    "backgroundImage": "/img/bg-contacto.jpg"
+  },
+  "contact": {
+    "title": "Contacto",
+    "map": {
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.183404258393!2d-58.649995684775746!3d-34.3966839805137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca6b54f25ed31%3A0xd6ce5ee554e496af!2sWyndham%20Nordelta%20Tigre%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1581286690639!5m2!1ses!2sar"
+    },
+    "info": [
+      {
+        "icon": "icon-clock",
+        "title": "Horarios",
+        "content": "Lunes: Cerrado\nMartes de 11hs a 20hs. Miércoles a Domingos desde las 10 hrs a las 20 hrs.\nSábados de 10 a 21 hrs."
+      },
+      {
+        "icon": "icon-map",
+        "title": "Dirección",
+        "content": "Avenida del puerto 240, Bahía Grande, Nordelta"
+      },
+      {
+        "icon": "icon-w-outline",
+        "title": "Turnos y consultas por Whatsapp",
+        "content": "(+54 9 11) 3420-9545",
+        "link": "https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
+      },
+      {
+        "icon": "icon-mail",
+        "title": "Email",
+        "content": "wspa@hotelwyndhamnordelta.com",
+        "link": "mailto:wspa@hotelwyndhamnordelta.com"
+      }
+    ],
+    "social": [
+      {
+        "icon": "icon-facebook",
+        "href": "https://www.facebook.com/HotelWyndhamNordelta"
+      },
+      {
+        "icon": "icon-instagram",
+        "href": "https://www.instagram.com/hotelwyndhamnordelta/"
+      }
+    ]
+  },
+  "policies": [
+    {
+      "title": "Políticas del Spa",
+      "content": "Los invitamos a disfrutar del relax que el Delta tiene para ofrecernos, con una vista única a Bahía Grande. El ingreso es exclusivamente para mayores de 18 años. Por razones de seguridad no permitimos el ingreso a mujeres embarazadas. En nuestras instalaciones no está permitido fumar. Se ruega avisar en recepción si tiene lesiones musculares o en las articulaciones, si sufre de presión arterial alta o si ha tenido recientemente cirugía plástica o con láser. Cualquiera de las condiciones anteriormente mencionadas descritas pueden limitar nuestra habilidad para realizar el tratamiento deseado. A continuación detallamos las principales normas del SPA."
+    },
+    {
+      "title": "Reservas",
+      "content": "Le solicitamos realizar su reserva con un mínimo de 48 hs. de anticipación para garantizar disponibilidad, por mail a: wspa@hotelwyndhamnordelta.com o por teléfono al 011 5236-9018 opcion 6. Si gusta reservar para fines de semana le aconsejamos contactarnos con mayor anticipación.\n\nSe ruega sea tan amable de llegar a su cita con al menos 15 minutos de anticipación y así disponer de suficiente tiempo para la preparación de su tratamiento. En el caso de llegar tarde, realizaremos todos nuestros esfuerzos para acomodarlo, pero esto no siempre es posible. La duración de su servicio puede ser reducida para evitar retrasos con los demás pacientes. Asimismo, los tratamientos serán cobrados en su totalidad.\n\nEn caso de poseer Bigbox, el día del servicio deberán traer un comprobante que poseen ese código."
+    },
+    {
+      "title": "Circuito de aguas",
+      "content": "Consta de una piscina climatizada in/out, jets y cascadas cervicales, sala de relax y solárium perfectamente armonizados para su confort. El ingreso es exclusivamente para mayores de 18 años. Por razones de seguridad no permitimos el ingreso a mujeres embarazadas."
+    },
+    {
+      "title": "Cancelaciones",
+      "content": "Aceptamos cancelaciones y reagendamientos hasta 24 hs. antes del tratamiento sin cargo. Cancelaciones realizadas con menos de 24 hs. tendrán un cargo del 50% del valor del tratamiento."
+    }
+  ]
+}

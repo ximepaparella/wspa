@@ -1,0 +1,194 @@
+{
+  "pageTitle": {
+    "title": "Circuitos de Spa",
+    "backgroundImage": "/img/bg-circuitos.jpg"
+  },
+  "circuits": [
+    {
+      "id": "dia-spa-eximia",
+      "title": "DÍA DE SPA • EXIMIA",
+      "duration": "4hs",
+      "badge": "MARTES A VIERNES 2x1",
+      "image": {
+        "src": "/img/tratamientos/dia-spa-eximia.jpg",
+        "alt": "DÍA DE SPA EXIMIA",
+        "width": 600,
+        "height": 400
+      },
+      "services": [
+        {
+          "type": "treatment",
+          "text": "Masaje a elección de 50'"
+        },
+        {
+          "type": "treatment",
+          "text": "Shock de Hidratación EXIMIA 50'"
+        },
+        {
+          "type": "circuit",
+          "text": "Circuito de Aguas 120':",
+          "subServices": [
+            "Piscina in/out climatizada con cascadas cervicales e hidromasaje integrado",
+            "Sala de relax con tumbonas térmicas",
+            "Sala de hidratación",
+            "Terraza con solárium y reposeras con vista a la Bahía Grande"
+          ]
+        },
+        {
+          "type": "gastronomy",
+          "text": "Propuesta gastronómica incluida en SĀNTAL CAFÉ"
+        }
+      ],
+      "pricing": [
+        {
+          "description": "VALOR POR UNA PERSONA",
+          "price": 6800,
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=174"
+        },
+        {
+          "description": "VALOR POR DOS PERSONAS (10% OFF)",
+          "price": 6120,
+          "priceNote": "c/u.-",
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=175"
+        }
+      ]
+    },
+    {
+      "id": "flores-del-delta",
+      "title": "FLORES DEL DELTA",
+      "duration": "4:30hs",
+      "badge": "MARTES A VIERNES 2x1",
+      "image": {
+        "src": "/img/tratamientos/flores-delta.jpg",
+        "alt": "FLORES DEL DELTA",
+        "width": 600,
+        "height": 400
+      },
+      "services": [
+        {
+          "type": "treatment",
+          "text": "Masaje a elección de 50'"
+        },
+        {
+          "type": "treatment",
+          "text": "Shock de Hidratación EXIMIA 50'"
+        },
+        {
+          "type": "treatment",
+          "text": "Reflexología 25'"
+        },
+        {
+          "type": "circuit",
+          "text": "Circuito de Aguas 120':",
+          "subServices": [
+            "Piscina in/out climatizada con cascadas cervicales e hidromasaje integrado",
+            "Sala de relax con tumbonas térmicas",
+            "Sala de hidratación",
+            "Terraza con solárium y reposeras con vista a la Bahía Grande"
+          ]
+        },
+        {
+          "type": "gastronomy",
+          "text": "Propuesta gastronómica incluida en SĀNTAL CAFÉ"
+        }
+      ],
+      "pricing": [
+        {
+          "description": "VALOR POR UNA PERSONA",
+          "price": 7500,
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=176"
+        },
+        {
+          "description": "VALOR POR DOS PERSONAS (10% OFF)",
+          "price": 6750,
+          "priceNote": "c/u.-",
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=177"
+        }
+      ]
+    },
+    {
+      "id": "brisas-bahia",
+      "title": "BRISAS DE BAHÍA",
+      "duration": "3hs",
+      "image": {
+        "src": "/img/tratamientos/brisas-bahia.jpg",
+        "alt": "BRISAS DE BAHÍA",
+        "width": 600,
+        "height": 400
+      },
+      "services": [
+        {
+          "type": "treatment",
+          "text": "Masaje a elección de 50'"
+        },
+        {
+          "type": "circuit",
+          "text": "Circuito de Aguas 120':",
+          "subServices": [
+            "Piscina in/out climatizada con cascadas cervicales e hidromasaje integrado",
+            "Sala de relax con tumbonas térmicas",
+            "Sala de hidratación",
+            "Terraza con solárium y reposeras con vista a la Bahía Grande"
+          ]
+        }
+      ],
+      "pricing": [
+        {
+          "description": "VALOR POR UNA PERSONA",
+          "price": 5200,
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=178"
+        }
+      ]
+    },
+    {
+      "id": "wspa-pareja",
+      "title": "W SPA EN PAREJA",
+      "duration": "4hs",
+      "image": {
+        "src": "/img/tratamientos/wspa-pareja.jpg",
+        "alt": "W SPA EN PAREJA",
+        "width": 600,
+        "height": 400
+      },
+      "services": [
+        {
+          "type": "treatment",
+          "text": "Masaje en pareja de 50'"
+        },
+        {
+          "type": "treatment",
+          "text": "Shock de Hidratación EXIMIA en pareja 50'"
+        },
+        {
+          "type": "circuit",
+          "text": "Circuito de Aguas 120':",
+          "subServices": [
+            "Piscina in/out climatizada con cascadas cervicales e hidromasaje integrado",
+            "Sala de relax con tumbonas térmicas",
+            "Sala de hidratación",
+            "Terraza con solárium y reposeras con vista a la Bahía Grande"
+          ]
+        },
+        {
+          "type": "gastronomy",
+          "text": "Propuesta gastronómica incluida en SĀNTAL CAFÉ"
+        }
+      ],
+      "pricing": [
+        {
+          "description": "VALOR POR PAREJA",
+          "price": 13600,
+          "link": "http://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=179"
+        }
+      ]
+    }
+  ],
+  "callToAction": {
+    "title": "CONSULTÁ DISPONIBILIDAD PARA TU PRÓXIMA VISITA",
+    "cta": {
+      "text": "CONSULTÁ AQUÍ",
+      "href": "https://api.whatsapp.com/send?phone=5491134209545&text=Hola%2C%20quiero%20realizar%20una%20consulta"
+    },
+    "backgroundImage": "/img/call-to-action/appointment.jpg"
+  }
+}
