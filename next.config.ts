@@ -1,9 +1,16 @@
 import type { NextConfig } from 'next';
 
-/* eslint-disable @typescript-eslint/no-require-imports */
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+// Bundle analyzer setup - only import when needed
+
+let withBundleAnalyzer: (config: NextConfig) => NextConfig = (
+  config: NextConfig
+) => config;
+if (process.env.ANALYZE === 'true') {
+  /* eslint-disable @typescript-eslint/no-require-imports */
+  withBundleAnalyzer = require('@next/bundle-analyzer')({
+    enabled: true,
+  });
+}
 
 const nextConfig: NextConfig = {
   // Performance optimizations
