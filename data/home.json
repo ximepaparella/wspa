@@ -6,6 +6,7 @@
         "title": "DÍA DE SPA EXIMIA",
         "description": "Te invitamos a disfrutar de una propuesta única pensada para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.",
         "image": {
+          "src": "/img/slides/slide-1.jpg",
           "desktop": "/img/slides/slide-1.jpg",
           "mobile": "/img/slides/slide-mobile-1.jpg",
           "alt": "Día de Spa Eximia - W Spa",
@@ -22,6 +23,7 @@
         "title": "FLORES DEL DELTA",
         "description": "Te invitamos a disfrutar de una propuesta única pensada para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.",
         "image": {
+          "src": "/img/slides/slide-2.jpg",
           "desktop": "/img/slides/slide-2.jpg",
           "mobile": "/img/slides/slide-mobile-2.jpg",
           "alt": "Flores del Delta - W Spa",

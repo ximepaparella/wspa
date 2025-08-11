@@ -43,25 +43,24 @@ export default async function Home() {
       {/* Hero Section Preview */}
       <section>
         <h2>Destacados</h2>
-        {data.hero.slides.map((slide) => (
-          <div key={slide.id}>
-            <h3>{slide.title}</h3>
-            <p>{slide.description}</p>
-            <a href={slide.cta.href}>{slide.cta.text}</a>
+        {data.hero?.slides?.map((slide) => (
+          <div key={slide?.id}>
+            <h3>{slide?.title}</h3>+ <p>{slide?.description}</p>+{' '}
+            <a href={slide?.cta?.href}>{slide?.cta?.text}</a>
           </div>
-        ))}
+        )) || []}
       </section>
 
       {/* Services Grid Preview */}
       <section>
         <h2>Nuestros Servicios</h2>
         <div>
-          {data.services.grid.map((service) => (
+          {data.services?.grid?.map((service) => (
             <div key={service.id}>
-              <h3>{service.title}</h3>
-              <a href={service.href}>Ver más</a>
+              <h3>{service?.title}</h3>
+              <a href={service?.href}>Ver más</a>
             </div>
-          ))}
+          )) || []}
         </div>
       </section>
 
