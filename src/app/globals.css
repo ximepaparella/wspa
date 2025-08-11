@@ -1,5 +1,6 @@
 /* Global Styles - W Spa */
 @import '../styles/reset.css';
+@import '../styles/icons.css';
 
 /* Additional global styles specific to Next.js */
 html,
