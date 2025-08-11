@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getHomeData } from '../../lib/fetcher/rscFetch';
+import Hero from '../components/sections/Hero';
 
 export const metadata: Metadata = {
   title: 'W Spa | Home Page | Whyndham Nordelta Spa',
@@ -40,16 +41,8 @@ export default async function Home() {
       </h1>
       <p>{data.intro.description}</p>
 
-      {/* Hero Section Preview */}
-      <section>
-        <h2>Destacados</h2>
-        {data.hero?.slides?.map((slide) => (
-          <div key={slide?.id}>
-            <h3>{slide?.title}</h3>+ <p>{slide?.description}</p>+{' '}
-            <a href={slide?.cta?.href}>{slide?.cta?.text}</a>
-          </div>
-        )) || []}
-      </section>
+      {/* Hero Section */}
+      <Hero slides={data.hero.slides} />
 
       {/* Services Grid Preview */}
       <section>
