@@ -1,0 +1,85 @@
+{
+  "pageTitle": {
+    "title": "Membresías",
+    "backgroundImage": "/img/bg-membresiasjpg.jpg"
+  },
+  "memberships": [
+    {
+      "id": "membresia-destacada",
+      "name": "MEMBRESÍA DESTACADA",
+      "validity": 30,
+      "price": 15000,
+      "image": {
+        "src": "/img/tratamientos/membresia-destacada.jpg",
+        "alt": "Membresía Destacada W Spa",
+        "width": 600,
+        "height": 400
+      },
+      "treatments": [
+        "2 Masajes relajantes de 50'",
+        "1 Shock de Hidratación EXIMIA 50'",
+        "1 Tratamiento facial a elección",
+        "Acceso ilimitado al Circuito de Aguas"
+      ],
+      "link": "https://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=180"
+    },
+    {
+      "id": "membresia-1",
+      "name": "MEMBRESÍA WELLNESS",
+      "validity": 30,
+      "price": 12000,
+      "image": {
+        "src": "/img/tratamientos/membresia-1.jpg",
+        "alt": "Membresía Wellness W Spa",
+        "width": 600,
+        "height": 400
+      },
+      "treatments": [
+        "1 Masaje relajante de 50'",
+        "1 Tratamiento facial básico",
+        "Acceso ilimitado al Circuito de Aguas",
+        "10% descuento en tratamientos adicionales"
+      ],
+      "link": "https://wyndhamnordelta.giftsandvouchers.com/?seccion=detalles&id=181"
+    }
+  ],
+  "waterCircuit": {
+    "title": "CIRCUITO DE AGUAS",
+    "validity": "Lunes a Viernes",
+    "guestPricing": {
+      "title": "Precio para Huéspedes:",
+      "options": [
+        {
+          "duration": "2 Hs",
+          "price": 2500
+        },
+        {
+          "duration": "4 Hrs máximo",
+          "price": 4000
+        }
+      ]
+    },
+    "externalPricing": {
+      "title": "Para clientes que no se hospedan en Wyndham:",
+      "options": [
+        {
+          "duration": "2hs",
+          "price": 3500
+        },
+        {
+          "duration": "4 Hrs máximo",
+          "price": 5500
+        }
+      ]
+    }
+  },
+  "callToAction": {
+    "preTitle": "PAQUETES PROMOCIONALES",
+    "title": "REGALÁ RELAX REGALA UN GIFT VOUCHER",
+    "cta": {
+      "text": "REGALÁ ONLINE",
+      "href": "https://wyndhamnordelta.giftsandvouchers.com/listado/"
+    },
+    "backgroundImage": "/img/call-to-action/gift.jpg"
+  }
+}

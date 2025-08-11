@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "id": 1,
+        "title": "DÍA DE SPA EXIMIA",
+        "description": "Te invitamos a disfrutar de una propuesta única pensada para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.",
+        "image": {
+          "src": "/img/slides/slide-1.jpg",
+          "desktop": "/img/slides/slide-1.jpg",
+          "mobile": "/img/slides/slide-mobile-1.jpg",
+          "alt": "Día de Spa Eximia - W Spa",
+          "width": 1920,
+          "height": 1080
+        },
+        "cta": {
+          "text": "CONOCÉ MÁS",
+          "href": "/circuitos-de-spa"
+        }
+      },
+      {
+        "id": 2,
+        "title": "FLORES DEL DELTA",
+        "description": "Te invitamos a disfrutar de una propuesta única pensada para disfrutar con tu pareja. 3 tratamientos exclusivos y acceso a nuestro circuito de aguas. Finalizá la experiencia con un Brunch en Santal.",
+        "image": {
+          "src": "/img/slides/slide-2.jpg",
+          "desktop": "/img/slides/slide-2.jpg",
+          "mobile": "/img/slides/slide-mobile-2.jpg",
+          "alt": "Flores del Delta - W Spa",
+          "width": 1920,
+          "height": 1080
+        },
+        "cta": {
+          "text": "CONOCÉ MÁS",
+          "href": "/circuitos-de-spa"
+        }
+      }
+    ]
+  },
+  "intro": {
+    "preTitle": "BIENVENIDOS A",
+    "title": "WHYNDHAM SPA",
+    "description": "W Spa te brinda la posibilidad de complementar tu viaje de placer o negocios con una serie de tratamientos pensados para encontrar el equilibrio perfecto entre descanso y salud. \n\nWyndham Nordelta es un hotel 5 estrellas ubicado en la Bahía Grande de Nordelta, Tigre, Buenos Aires. Cuenta con 141 habitaciones, spa con circuito de aguas, piscina descubierta, restaurant con cocina de autor y salones para eventos y reuniones."
+  },
+  "services": {
+    "grid": [
+      {
+        "id": "faciales",
+        "title": "FACIALES",
+        "href": "/tratamientos#tratamientos-faciales",
+        "image": {
+          "src": "/img/tratamientos-faciales-grilla.jpg",
+          "alt": "Tratamientos Faciales - W Spa",
+          "width": 400,
+          "height": 300
+        }
+      },
+      {
+        "id": "premium",
+        "title": "TRATAMIENTOS PREMIUM",
+        "href": "/tratamientos#tratamientos-premium",
+        "image": {
+          "src": "/img/tratamientos-spa-premium-grilla.jpg",
+          "alt": "Tratamientos Premium - W Spa",
+          "width": 400,
+          "height": 300
+        }
+      },
+      {
+        "id": "circuitos",
+        "title": "CIRCUITOS DE SPA",
+        "href": "/circuitos-de-spa",
+        "image": {
+          "src": "/img/circuitos-de-spa-grilla.jpg",
+          "alt": "Circuitos de Spa - W Spa",
+          "width": 800,
+          "height": 600
+        }
+      },
+      {
+        "id": "corporales",
+        "title": "CORPORALES",
+        "href": "/tratamientos#tratamientos-corporales",
+        "image": {
+          "src": "/img/tratamientos-corporales-grilla.jpg",
+          "alt": "Tratamientos Corporales - W Spa",
+          "width": 400,
+          "height": 300
+        }
+      },
+      {
+        "id": "membresias",
+        "title": "MEMBRESÍAS",
+        "href": "/membresias",
+        "image": {
+          "src": "/img/membresias-de-spa-grilla.jpg",
+          "alt": "Membresías - W Spa",
+          "width": 400,
+          "height": 300
+        }
+      }
+    ]
+  },
+  "callToAction": [
+    {
+      "id": "appointment",
+      "title": "RESERVÁ TU TURNO",
+      "subtitle": "HORARIOS",
+      "description": "Te invitamos a vivir una experiencia única en el primer día spa de Nordelta",
+      "image": {
+        "src": "/img/call-to-action/appointment.jpg",
+        "alt": "Reservá tu turno en W Spa",
+        "width": 600,
+        "height": 400
+      },
+      "cta": {
+        "text": "RESERVÁ AQUÍ",
+        "href": "#"
+      }
+    },
+    {
+      "id": "gift",
+      "title": "REGALÁ SPA",
+      "subtitle": "GIFT CARD",
+      "description": "Regalá la experiencia W Spa con nuestra gift card",
+      "image": {
+        "src": "/img/call-to-action/gift.jpg",
+        "alt": "Gift Card W Spa",
+        "width": 600,
+        "height": 400
+      },
+      "cta": {
+        "text": "COMPRÁ AQUÍ",
+        "href": "#"
+      }
+    }
+  ]
+}

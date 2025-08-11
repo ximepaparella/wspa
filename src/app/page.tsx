@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getHomeData } from '../../lib/fetcher/rscFetch';
 
 export const metadata: Metadata = {
   title: 'W Spa | Home Page | Whyndham Nordelta Spa',
@@ -28,11 +29,44 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  // Fetch data using RSC data layer
+  const data = await getHomeData();
+
   return (
     <main>
-      <h1>W Spa | Whyndham Nordelta Spa</h1>
-      <p>Página principal en desarrollo...</p>
+      <h1>
+        {data.intro.preTitle} {data.intro.title}
+      </h1>
+      <p>{data.intro.description}</p>
+
+      {/* Hero Section Preview */}
+      <section>
+        <h2>Destacados</h2>
+        {data.hero?.slides?.map((slide) => (
+          <div key={slide?.id}>
+            <h3>{slide?.title}</h3>+ <p>{slide?.description}</p>+{' '}
+            <a href={slide?.cta?.href}>{slide?.cta?.text}</a>
+          </div>
+        )) || []}
+      </section>
+
+      {/* Services Grid Preview */}
+      <section>
+        <h2>Nuestros Servicios</h2>
+        <div>
+          {data.services?.grid?.map((service) => (
+            <div key={service.id}>
+              <h3>{service?.title}</h3>
+              <a href={service?.href}>Ver más</a>
+            </div>
+          )) || []}
+        </div>
+      </section>
+
+      <footer>
+        <p>Datos cargados desde JSON estático - Epic E3 funcionando ✅</p>
+      </footer>
     </main>
   );
 }
