@@ -1,9 +1,31 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Circuitos de Spa | W Spa Nordelta',
+  title: 'W Spa | Circuitos de Spa | Whyndham Nordelta Spa',
   description:
-    'Descubre nuestros exclusivos circuitos de spa. Circuitos de agua, sauna, jacuzzi y más tratamientos relajantes en W Spa Nordelta.',
+    'W Spa te ofrece experiencias exclusivas para disfrutar de forma individual o en grupos de 2, 3 o más personas',
+  openGraph: {
+    type: 'website',
+    url: 'https://wspa.com.ar/circuitos-de-spa',
+    title: 'W Spa | Circuitos de Spa | Whyndham Nordelta Spa',
+    description:
+      'W Spa te ofrece experiencias exclusivas para disfrutar de forma individual o en grupos de 2, 3 o más personas',
+    images: [
+      {
+        url: 'https://wspa.com.ar/wspa.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'W Spa - Circuitos de Spa',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'W Spa | Circuitos de Spa | Whyndham Nordelta Spa',
+    description:
+      'W Spa te ofrece experiencias exclusivas para disfrutar de forma individual o en grupos de 2, 3 o más personas',
+    images: ['https://wspa.com.ar/wspa.jpg'],
+  },
 };
 
 export default function CircuitosPage() {

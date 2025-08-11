@@ -1,9 +1,31 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tratamientos | W Spa Nordelta',
+  title: 'W Spa | Tratamientos | Whyndham Nordelta Spa',
   description:
-    'Explora nuestra amplia variedad de tratamientos de spa. Tratamientos faciales, corporales, de relajación y bienestar en W Spa Nordelta.',
+    'W Spa dispone de tratamientos faciales, corporales y una gama exclusiva de tratamientos Premium Germaine de Capuccini',
+  openGraph: {
+    type: 'website',
+    url: 'https://wspa.com.ar/tratamientos',
+    title: 'W Spa | Tratamientos | Whyndham Nordelta Spa',
+    description:
+      'W Spa dispone de tratamientos faciales, corporales y una gama exclusiva de tratamientos Premium Germaine de Capuccini',
+    images: [
+      {
+        url: 'https://wspa.com.ar/wspa.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'W Spa - Tratamientos',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'W Spa | Tratamientos | Whyndham Nordelta Spa',
+    description:
+      'W Spa dispone de tratamientos faciales, corporales y una gama exclusiva de tratamientos Premium Germaine de Capuccini',
+    images: ['https://wspa.com.ar/wspa.jpg'],
+  },
 };
 
 export default function TratamientosPage() {
